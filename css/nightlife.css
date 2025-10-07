@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Amithen';
+    src: url(..//fonts/Amithen.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*Background Photo */
+#backgroundimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.backgroundtext {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 8em;
+    text-align: center;
+    padding: 10px;
+    max-width: 90%;
+    box-sizing: border-box;
+    font-family: 'Amithen';
+    word-spacing: 10px;
+}
+
+
+/* Content box */
+.content-box {
+    background-color: rgb(255, 255, 255);
+    color: #034563;
+    padding: 5px 50px;
+    margin: 20px auto;
+    margin-top: 70px;
+    width: 80%;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+    margin-top: 100vh;
+}
+
+.descriptivetext {
+    position: relative;
+    color: #ffffff;
+    margin-top: 10vh;
+    color: black;
+    padding: 0 80px;
+    font-size: 20px;
+}
+
+/* Container for nightlife description */
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card.large {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.card.medium {
+    grid-column: span 2;
+}
+
+.card.small {
+    grid-column: span 1;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.card.extra-large {
+    grid-column: span 3;
+    grid-row: span 3;
+}
+
+.card.extra-small {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.card.wide {
+    grid-column: span 4;
+    grid-row: span 1;
+}
+
+.card.tall {
+    grid-column: span 1;
+    grid-row: span 2;
+}

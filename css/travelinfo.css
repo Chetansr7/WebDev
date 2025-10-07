@@ -1,0 +1,88 @@
+.myimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.text {
+    color: azure;
+    font-size: 100px;
+    font-family: Amithen;
+    text-align: center;
+    padding: 150px;
+}
+
+body {
+    background-color: #034563;
+}
+
+.content-box {
+    background-color: rgb(255, 255, 255);
+    color: #034563;
+    padding: 50px;
+    margin: 20px auto;
+    margin-top: -50px;
+    width: 60%;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* Adjust line height for better readability */
+}
+
+
+
+.content-box h1 {
+
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.zimaz {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin: 20px 0;
+
+}
+
+
+.content-box h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.content-box h5 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.content-box h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.content-box p {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

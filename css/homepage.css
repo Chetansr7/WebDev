@@ -1,0 +1,485 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@font-face {
+    font-family: 'Amithen';
+    src: url(..//fonts/Amithen.otf);
+}
+
+/* Video */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#myVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.backgroundtext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 6em;
+    text-align: center;
+    padding: 10px;
+    max-width: 90%;
+    box-sizing: border-box;
+    font-family: 'Amithen';
+}
+
+/* Content box */
+.content-box {
+    background-color: rgb(255, 255, 255);
+    color: #034563;
+    padding: 0px 50px;
+    margin: 20px auto;
+    margin-top: 10vh;
+    width: 80%;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.descriptivetext {
+    position: relative;
+    color: #ffffff;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    color: black;
+    padding: 0 80px;
+    font-size: 20px;
+}
+
+/* Did you know? section */
+.did-you-know-container {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.did-you-know-container h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.dykcard {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+    transition: transform 0.2s;
+    outline: 1px solid white;
+    outline-offset: -4px;
+}
+
+.dykcard img {
+    width: 100%;
+    height: auto;
+}
+
+
+.dykcard .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 5px;
+}
+
+.dykcard:hover .overlay {
+    opacity: 1;
+}
+
+
+/* About us section */
+#aboutus {
+    color: white;
+    font-size: 50px;
+    padding-left: 35px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.main-container-aboutus {
+    background-color: rgb(54, 53, 53);
+
+}
+
+.container-aboutus {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+}
+
+.quote {
+    padding-top: 15px;
+    font-style: italic;
+    font-size: 12px;
+}
+
+
+.card {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-color: white;
+    overflow: hidden;
+    text-align: center;
+    width: 30%;
+    height: 500px;
+    color: white;
+}
+
+.card h2 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.card h4 {
+    padding-top: 20px;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.coursename {
+    padding-top: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #cccccc;
+    margin: 20px auto;
+
+}
+
+.profile-pic-karan {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #cccccc;
+    margin: 20px auto;
+    background-image: url('../images/photos/karan.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-pic-deebesh {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #cccccc;
+    margin: 20px auto;
+    background-image: url('../images/photos/deebesh.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-pic-shaan {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #cccccc;
+    margin: 20px auto;
+    background-image: url('..//images/photos/shaan.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* About us socials */
+.iconaboutus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.iconaboutus img {
+    margin-right: 10px;
+}
+
+.username {
+    margin: 0;
+}
+
+/* Mobile devices */
+@media (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links a {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .user-options {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .user-options a {
+        font-size: 14px;
+    }
+
+    #myVideo {
+        height: 50vh;
+    }
+
+    .backgroundtext {
+        font-size: 40px;
+        padding: 150px 20px;
+
+
+    }
+
+    .content-box {
+        padding: 20px;
+        margin-top: 10px;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .descriptivetext {
+        padding: 0 20px;
+        font-size: 16px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dykcard {
+        width: 90%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .main-container-aboutus {
+        height: auto;
+        padding: 20px;
+    }
+
+    .container-aboutus {
+        flex-direction: column;
+    }
+
+
+    .card {
+        width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .profile-pic-shaan,
+    .profile-pic-deebesh,
+    .profile-pic-karan {
+        width: 120px;
+        height: 120px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-left,
+    .footer-right {
+        margin-bottom: 20px;
+    }
+
+    .social-media {
+        margin-bottom: 10px;
+    }
+
+    .social-media a img {
+        height: 25px;
+    }
+
+    .footer-right form {
+        flex-direction: column;
+    }
+
+    .footer-right input[type="email"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .footer-right button {
+        width: 100%;
+    }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+
+    .nav-links {
+        flex-direction: row;
+    }
+
+    .nav-links a {
+        font-size: 20px;
+    }
+
+    .user-options a {
+        font-size: 16px;
+    }
+
+    #myVideo {
+        height: 60vh;
+    }
+
+    .backgroundtext {
+        font-size: 60px;
+        padding: 200px 20px;
+    }
+
+    .content-box {
+        padding: 30px;
+        width: 90%;
+    }
+
+    .descriptivetext {
+        padding: 0 40px;
+        font-size: 18px;
+    }
+
+    .card-container {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .dykcard {
+        width: 45%;
+        height: 250px;
+    }
+
+    .main-container-aboutus {
+        height: auto;
+        padding: 30px;
+    }
+
+    .container-aboutus {
+        flex-direction: row;
+    }
+
+    .card {
+        width: 30%;
+        height: auto;
+    }
+
+    .profile-pic-shaan,
+    .profile-pic-deebesh,
+    .profile-pic-karan {
+        width: 140px;
+        height: 140px;
+    }
+
+    .footer-container {
+        flex-direction: row;
+    }
+
+    .footer-left,
+    .footer-right {
+        margin: 0;
+    }
+
+    .social-media {
+        margin: 0 20px;
+    }
+
+    .social-media a img {
+        height: 30px;
+    }
+}
+
+.dropdown1 {
+    position: relative;
+    display: inline-block;
+}
+
+.user-options .dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.user-options .dropdown-content1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content1 a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown1.show .dropdown-content1 {
+    display: block;
+}
