@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href="../css/navbarfooter.css">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <a href="homepage.html">
+            <div class="logo">
+                <img src="../images/logo/mauritiuslogo.png" alt="Mauritius Logo">
+            </div>
+        </a>
+        <ul class="nav-links">
+            <li class="dropdown">
+                <button>Discover</button>
+                <div class="dropdown-content">
+                    <a href="history.html">History</a>
+                    <a href="culture.html">Culture</a>
+                    <a href="food.html">Food</a>
+                    <a href="language.html">Language</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button>Experience</button>
+                <div class="dropdown-content">
+                    <a href="activities.html">Activities</a>
+                    <a href="islandsandbeaches.html">Islands and Beaches</a>
+                    <a href="nightlife.html">Nightlife</a>
+                    <a href="events.html">Events</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button>Plan your visit</button>
+                <div class="dropdown-content">
+                    <a href="travelinfo.html">Travel information</a>
+                    <a href="travelling.html">Airline</a>
+                    <a href="stay.html">Stay</a>
+                    <a href="gettingaround.html">Getting around</a>
+                    <a href="faq.html">FAQs</a>
+                </div>
+            </li>
+        </ul>
+        <div class="user-options">
+            <!-- User Icon -->
+            <div class="user-icon">
+                <img src="../images/icons/accountuser.png" alt="User Icon">
+            </div>
+            <div class="dropdown1">
+                <button id="signUpBtn">Sign Up</button>
+                <div class="dropdown-content1">
+                    <a href="register.html">Register</a>
+                    <a href="signin.html">Sign In</a>
+                </div>
+            </div>
+
+
+
+            <!-- Mauritius Outline -->
+            <div class="mauritius-outline">
+                <img style="cursor: pointer;" src="../images/logo/mauritiusoutline.png" id="mauritiusoutline"
+                    alt="Mauritius Outline">
+            </div>
+            <!-- Modal Structure -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="..//images/photos/mapofmauritius.jpg" alt="mauritius">
+                </div>
+            </div>
+    </nav>
+
+    <!-- Register Modal Structure -->
+    <div id="registerModal" class="modal-register">
+        <div class="modal-content-register">
+            <span class="close-register">&times;</span>
+            <h2>Register</h2>
+            <!-- Register form content here -->
+            <form>
+                <div class="form-group">
+                    <input type="text" id="fullName" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sign In Modal Structure -->
+    <div id="signinModal" class="modal-signin">
+        <div class="modal-content-signin">
+            <span class="close-signin">&times;</span>
+            <h2>Sign In</h2>
+            <!-- Sign in form content here -->
+            <form>
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Video -->
+    <div class="video-container">
+        <video autoplay muted loop id="myVideo">
+            <source src="..//assets/video/homepagebackground.MOV" type="video/mp4">
+        </video>
+        <h3 class="backgroundtext">Tropical Paradise.</h3>
+    </div>
+
+    <!-- Text after video -->
+    <div class="content-box">
+        <div class="descriptivetext">
+            <p>Welcome to Mauritius – your gateway to paradise! Picture this: sun-kissed beaches, vibrant coral reefs
+                and exuberant green landscapes that make you want to explore every corner. Mauritius is not just about
+                magnificent beaches and clear blue waters – though we have plenty of those! It’s a vibrant tapestry of
+                cultures, flavours and experiences just waiting for you to dive in. </p>
+            <br>
+            <p>Whether you're here to relax on the beach, explore the wild, or immerse yourself in our vibrant culture,
+                this island promises indelible memories at every turn. Your paradise adventure begins now</p>
+
+        </div>
+
+
+        <!-- Did you know? -->
+        <div class="did-you-know-container">
+            <h1>Did you know? </h1>
+            <div class="card-container">
+                <div class="dykcard">
+                    <img src="..//images/photos/smalllisland.webp" alt="Culture">
+                    <div class="overlay">It’s a small island but with so much to see!</div>
+                </div>
+                <div class="dykcard">
+                    <img src="..//images/photos/sports.jpg" alt="Sports">
+                    <div class="overlay">Mauritius proudly hosted the esteemed Jeux des Îles 2019.</div>
+                </div>
+                <div class="dykcard">
+                    <img src="..//images/photos/mauritiansmiling.jpg" alt="Mauritian Smiling">
+                    <div class="overlay">Mauritius is the happiest country in Africa.</div>
+                </div>
+                <div class="dykcard">
+                    <img src="..//images/photos/underwaterwaterfall.jpg" alt="Underwater Waterfall">
+                    <div class="overlay">Mauritius is surrounded by a ring of dormant volcanoes, streams, waterfalls and
+                        rivers in all four directions.</div>
+                </div>
+                <div class="dykcard">
+                    <img src="..//images/photos/lifeexpectancy.jpg" alt="Life Expectancy">
+                    <div class="overlay">Life expectancy is a reasonably high at 75 years in Mauritius.</div>
+                </div>
+                <div class="dykcard">
+                    <img src="..//images/photos/flagpeople.webp" alt="Mauritius cultural diversity">
+                    <div class="overlay">Mauritius embodies a rich tapestry of multicultural diversity.</div>
+                </div>
+                <div class="dykcard">
+                    <img src="..//images/photos/mauritianchild.jpg" alt="Mauritius multilingual people">
+                    <div class="overlay">Every Mauritian knows at least 3 languages: Creole, English and French</div>
+                </div>
+                <div class="dykcard">
+                    <img src="..//images/photos/mauritianpeace.jpg" alt="Peace">
+                    <div class="overlay">Mauritius' peaceful atmosphere allows it to exist without needing to raise a
+                        standing army.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About us section -->
+        <div class="main-container-aboutus">
+            <h1 id="aboutus">About us</h1>
+            <div class="container-aboutus">
+                <div class="card">
+                    <div class="profile-pic-shaan"></div>
+                    <h2>Shaan</h2>
+                    <h5>Soyfoo Mohammad Ibne Javed</h5>
+                    <p>(23030935)</p>
+                    <h5 class="coursename">BSC (Hons) <br>in Computer Science</h5>
+                    <div class="quote">"Ki p dire?"</div>
+                    <div class="quote">"What's up?"</div>
+                    <div class="iconaboutus">
+                        <img src="..//images/icons/instagram3.webp" alt="instagram" width="40px">
+                        <h6>_shaan_s17</h6>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="profile-pic-deebesh"></div>
+                    <h2>Deebesh</h2>
+                    <h5>Kant Araburdoo</h5>
+                    <p>(23023229)</p>
+                    <h5 class="coursename">Bachelor of <br>Software Engineering (Hons)</h5>
+                    <div class="quote">"Bizin seye pou kone."</div>
+                    <div class="quote">"You must try to know."</div>
+                    <div class="iconaboutus">
+                        <img src="..//images/icons/instagram3.webp" alt="instagram" width="40px">
+                        <h6>a.deebesh</h6>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="profile-pic-karan"></div>
+                    <h2>Chetan</h2>
+                    <h5>Rao Sonoo</h5>
+                    <p>(23048457)</p>
+                    <h5 class="coursename">BSC (Hons) <br>in Computer Science</h5>
+                    <div class="quote">"Respir to lavenir, expir to pase"</div>
+                    <div class="quote">"Breathe for the future, exhale the past."</div>
+                    <div class="iconaboutus">
+                        <img src="..//images/icons/instagram3.webp" alt="instagram" width="40px">
+                        <h6>karancrs</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="..//images/icons/mauritiusflag.png" alt="Mauritius Flag">
+            </div>
+            <div class="footer-center">
+                <div class="textallrights">
+                    <p>&copy; 2024 Zilwa Ltd &#38; Co. All rights reserved.</p><br>
+                </div>
+                <p>
+                    <a href="contactus.html">Contact Us</a> |
+                    <a href="privacy_policy.html">Privacy Policy</a> |
+                    <a href="terms_of_service.html">Terms of Service</a>
+                </p> <br>
+                <div class="social-media">
+                    <span class="Followus">Follow us |</span>
+                    <a href="#"><img src="..//images/icons/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="..//images/icons/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="..//images/icons/tiktok.png" alt="TikTok"></a>
+                    <a href="#"><img src="..//images/icons/youtube.png" alt="YouTube"></a>
+                    <a href="#"><img src="..//images/icons/x.png" alt="X"></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <span>Subscribe to our newsletter</span>
+                <form>
+                    <input type="email" placeholder="Email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link scripts -->
+    <script src="../js/navbar.js"></script>
+
+</body>
+
+</html>

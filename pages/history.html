@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+    <link rel="stylesheet" href="..//css/history.css">
+    <link rel="stylesheet" href="..//css/navbarfooter.css">
+    <link rel="stylesheet" href="..//css/MainPage.css">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <a href="homepage.html">
+            <div class="logo">
+                <img src="../images/logo/mauritiuslogo.png" alt="Mauritius Logo">
+            </div>
+        </a>
+        <ul class="nav-links">
+            <li class="dropdown">
+                <button>Discover</button>
+                <div class="dropdown-content">
+                    <a href="history.html">History</a>
+                    <a href="culture.html">Culture</a>
+                    <a href="food.html">Food</a>
+                    <a href="language.html">Language</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button>Experience</button>
+                <div class="dropdown-content">
+                    <a href="activities.html">Activities</a>
+                    <a href="islandsandbeaches.html">Islands and Beaches</a>
+                    <a href="nightlife.html">Nightlife</a>
+                    <a href="events.html">Events</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button>Plan your visit</button>
+                <div class="dropdown-content">
+                    <a href="travelinfo.html">Travel information</a>
+                    <a href="travelling.html">Airline</a>
+                    <a href="stay.html">Stay</a>
+                    <a href="gettingaround.html">Getting around</a>
+                    <a href="faq.html">FAQs</a>
+                </div>
+            </li>
+        </ul>
+        <div class="user-options">
+            <!-- User Icon -->
+            <div class="user-icon">
+                <img src="../images/icons/accountuser.png" alt="User Icon">
+            </div>
+            <div class="dropdown1">
+                <button id="signUpBtn">Sign Up</button>
+                <div class="dropdown-content1">
+                    <a href="register.html">Register</a>
+                    <a href="signin.html">Sign In</a>
+                </div>
+            </div>
+
+
+
+            <!-- Mauritius Outline -->
+            <div class="mauritius-outline">
+                <img style="cursor: pointer;" src="../images/logo/mauritiusoutline.png" id="mauritiusoutline"
+                    alt="Mauritius Outline">
+            </div>
+            <!-- Modal Structure -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="..//images/photos/mapofmauritius.jpg" alt="mauritius">
+                </div>
+            </div>
+    </nav>
+
+    <!-- Register Modal Structure -->
+    <div id="registerModal" class="modal-register">
+        <div class="modal-content-register">
+            <span class="close-register">&times;</span>
+            <h2>Register</h2>
+            <!-- Register form content here -->
+            <form>
+                <div class="form-group">
+                    <input type="text" id="fullName" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sign In Modal Structure -->
+    <div id="signinModal" class="modal-signin">
+        <div class="modal-content-signin">
+            <span class="close-signin">&times;</span>
+            <h2>Sign In</h2>
+            <!-- Sign in form content here -->
+            <form>
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="fullscreen-image">
+        <div class="backgroundtext">History</div>
+        <div class="overlay-content">
+            <h1>A small island nation in the Indian Ocean, boasts a rich and diverse history shaped by various cultures
+                and colonial influences.</h1>
+            <button id="learn-more-button">Learn More</button>
+        </div>
+    </div>
+
+    <main id="main-content">
+        <br>
+        <br>
+        <h4 style="text-align: center ;">Below are the current Prime Minister and President of Mauritius,<br> who play
+            pivotal roles in shaping the country&#39;s future.</h5>
+            <div class="image-pair-container-1">
+                <div class="image-container-1">
+                    <img src="..//images/photos/PM.jpg" alt="Prime Minister">
+                    <div class="text">
+                        The Hon. Pravind Kumar JUGNAUTH<br><br>
+                        Prime Minister <br>
+                        Minister of Defence, Home Affairs and External Communications<br>
+                        Minister for Rodrigues, Outer Islands and Territorial Integrity
+                    </div>
+                </div>
+                <div class="image-container-1">
+                    <img src="..//images/photos/President.jpg" alt="President">
+                    <div class="text">
+                        His Excellency Mr Prithvirajsing ROOPUN <br>G.C.S.K<br>
+                        President
+                    </div>
+                </div>
+            </div>
+
+            <section class="main-11">
+                <section class="centered-box">
+                    <div class="box-content">
+                        <div class="centered-text">
+                            <h2>Government House</h2>
+                            <p>Government House is one of the most historic buildings in Port Louis, the capital city of
+                                Mauritius. Dubbed as the oldest building of the capital, it was built during the French
+                                colonisation era and served as the residence of the first French governor of Mauritius.
+                                The construction of this building was supervised by the governor himself, and its
+                                architecture is typical of the period.</p>
+                            <br>
+                            <p>One of the most striking features of the Government House is the statue of Queen Victoria
+                                that stands in front of the building. The statue was erected during the British colonial
+                                period and is a testament to the island&#39;s colonial history. The statue portrays
+                                Queen
+                                Victoria with an air of un-amused indifference, which is quite characteristic of her
+                                personality.</p>
+                        </div>
+                        <img src="..//images/photos/History-7.jpg" alt="Description of image" class="centered-image">
+                    </div>
+                </section>
+            </section>
+
+
+            <section class="main-11">
+                <section class="centered-box">
+                    <div class="box-content">
+                        <img src="..//images/photos/History-14.png" alt="Description of image" class="centered-image">
+                        <div class="centered-text">
+                            <h2>The Parliament of Mauritius</h2>
+                            <p>The Parliament of Mauritius, established in 1968, is the nation&#39;s supreme legislative
+                                body. Operating under a unicameral system, it consists of the National Assembly, where
+                                elected Members of Parliament (MPs) represent constituencies across the island. The
+                                Parliament is responsible for enacting laws, approving budgets, and overseeing the
+                                government&#39;s work. Located in Port Louis, the Parliament building symbolises the
+                                country&#39;s commitment to democracy. It is a place where key decisions shaping
+                                Mauritius&#39;s
+                                future are debated and made, reflecting the voices and concerns of its people.</p>
+                            <br>
+                            <p>The government of Mauritius is currently being led by the Prime Minister, Pravind Kumar
+                                Jugnauth, from the Movement Socialist Militant (MSM) party, who has been in office since
+                                December 10 2014. </p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+
+            <section class="history-content">
+                <h1>History of Mauritius</h1>
+                <p>Mauritius has a rich and diverse history, with influences from Dutch, French, and British colonisers.
+                    The island was first discovered by Arab sailors in the 9th century, but it remained uninhabited
+                    until the arrival of the Portuguese in the 16th century. The Dutch were the first to establish a
+                    settlement in 1638, but they abandoned it in 1710 due to harsh living conditions.</p>
+                <p>The French took control of the island in 1715 and developed the sugar industry, which became a
+                    cornerstone of the island&#39;s economy. In 1810, the British captured Mauritius, and it remained a
+                    British colony until it gained independence in 1968. The legacy of these various cultures can be
+                    seen in the island&#39;s architecture, cuisine, and traditions.</p>
+                <p>Today, Mauritius is known for its political stability, vibrant culture, and as a melting pot of
+                    different ethnicities and religions. The history of Mauritius is a testament to its resilience and
+                    ability to adapt to changing circumstances.</p>
+            </section>
+
+            <section class="additional-content" id="additional-content">
+                <div class="image-container">
+                    <h2>Independence Day: March 12 1968</h2>
+                    <img src="images/photos/History-1.png" alt="Additional Image" id="additional-image">
+                    <div class="image-buttons">
+                        <button class="image-button left-arrow">&lt;</button>
+                        <button class="image-button right-arrow">&gt;</button>
+                    </div>
+                </div>
+                <div id="additional-text-content"></div>
+
+                <section class="history-content">
+                    <br>
+                    <br>
+                    <br>
+                    <p>Mauritius achieved independence from British rule on March 12, 1968, with Sir Seewoosagur
+                        Ramgoolam becoming the island&#39;s first Prime Minister. As a key figure in the independence
+                        movement, Ramgoolam is honoured as the "Father of the Nation." This pivotal moment marked the
+                        transition from colonial governance to self-rule, and Independence Day is now celebrated with
+                        national pride, including parades, cultural events, and reflections on Mauritius&#39;s journey
+                        to
+                        sovereignty.</p>
+                </section>
+            </section>
+    </main>
+
+    <section class="back">
+        <section class="centered-box">
+            <div class="box-content">
+                <div class="centered-text">
+                    <h2>Dodo</h2>
+                    <p>The dodo, an iconic symbol of Mauritius, was a flightless bird endemic to the island. Discovered
+                        by Portuguese sailors in the late 16th century, the dodo stood about one metre tall and had a
+                        robust, grey body with a distinctive beak. Unfortunately, due to over-hunting by sailors and the
+                        introduction of non-native animals, the dodo became extinct by the late 17th century. Despite
+                        its extinction, the dodo remains a symbol of Mauritius&#38;s unique natural heritage and a
+                        poignant
+                        reminder of the impact of human activities on wildlife.</p>
+
+                </div>
+                <img src="..//images/photos/History-8.jpg" alt="Description of image" class="centered-image">
+            </div>
+        </section>
+    </section>
+
+    <section class="centered-box">
+        <div class="box-content">
+            <img src="..//images/photos/History-10.jpg" alt="Description of image" class="centered-image">
+            <div class="centered-text">
+                <h2>Mauritius Kestrel</h2>
+                <p>The Mauritius kestrel is the national bird of Mauritius, symbolising the island&#38;s dedication to
+                    wildlife conservation. This small, agile raptor was once critically endangered due to habitat loss
+                    and introduced predators. However, through intensive conservation efforts, including habitat
+                    restoration and captive breeding programs, its population has significantly recovered. The Mauritius
+                    kestrel is known for its distinctive plumage and impressive hunting skills, and it now serves as a
+                    symbol of hope and resilience in the ongoing efforts to protect and preserve the island&#38;s unique
+                    biodiversity.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="early-settlements">
+        <h2>Early Settlements of Mauritius</h2>
+        <img src="..//images/photos/History-11.jpg" alt="Portuguese Exploration" style="width: 50%;">
+        <div class="settlement-section">
+            <h2>Portuguese Exploration</h2>
+            <p>The island of Mauritius was first discovered by Portuguese sailors in 1506. Although they were the first
+                Europeans to arrive, the Portuguese did not establish any settlements. Their main interest was in
+                navigating trade routes, and Mauritius remained largely uninhabited during their brief exploration.
+                Despite this, their discovery marked the beginning of European interest in the island.</p>
+            <img src="..//images/photos/History-15.jpg" alt="Portuguese Exploration" class="settlement-image">
+        </div>
+
+        <div class="settlement-section">
+            <br>
+            <h2>Dutch Colonisation</h2>
+            <p>The Dutch were the first to attempt settlement on Mauritius, establishing a colony in 1638. They built a
+                small settlement and began cultivating crops, but their efforts were hindered by the island&#38;s harsh
+                climate, diseases, and frequent cyclones. The Dutch left Mauritius in 1710, abandoning their settlement.
+                However, their brief presence left a lasting mark on the island&#39;s botanical history, including the
+                introduction of sugarcane.</p>
+            <img src="..//images/photos/History-16.png" alt="Dutch Colonisation" class="settlement-image">
+        </div>
+
+        <div class="settlement-section">
+            <br>
+            <h2>French Rule</h2>
+            <p>In 1710, the French East India Company took control of Mauritius, renaming it Île de France. The French
+                developed the island&#38;s economy, particularly focusing on agriculture and the sugar industry. They
+                introduced enslaved Africans and indentured labou rers from India to work on the sugar plantations. The
+                French era was marked by significant development in infrastructure and the establishment of a robust
+                plantation economy that greatly influenced Mauritius&#39;s socio-economic landscape.</p>
+            <img src="..//images/photos/History-17.jpg" alt="French Rule" class="settlement-image">
+        </div>
+
+        <div class="settlement-section">
+            <br>
+            <h2>British Colonial Period</h2>
+            <p>The British captured Mauritius in 1810 during the Napoleonic Wars, and the island officially became a
+                British colony in 1814 under the Treaty of Paris. The British administration continued the development
+                of the sugar industry and implemented various administrative reforms. The introduction of Indian
+                labourers as indentured servants significantly influenced the island&#38;s demographic and cultural
+                composition. Mauritius remained under British rule until it gained independence in 1968, and the legacy
+                of British governance can still be seen in the island&#38;s legal and educational systems.</p>
+            <img src="..//images/photos/History-18.jpg" alt="British Colonial Period" class="settlement-image">
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="..//images/icons/mauritiusflag.png" alt="Mauritius Flag">
+            </div>
+            <div class="footer-center">
+                <div class="textallrights">
+                    <p>&copy; 2024 Zilwa Ltd &#38; Co. All rights reserved.</p><br>
+                </div>
+                <p>
+                    <a href="contactus.html">Contact Us</a> |
+                    <a href="privacy_policy.html">Privacy Policy</a> |
+                    <a href="terms_of_service.html">Terms of Service</a>
+                </p> <br>
+                <div class="social-media">
+                    <span class="Followus">Follow us |</span>
+                    <a href="#"><img src="..//images/icons/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="..//images/icons/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="..//images/icons/tiktok.png" alt="TikTok"></a>
+                    <a href="#"><img src="..//images/icons/youtube.png" alt="YouTube"></a>
+                    <a href="#"><img src="..//images/icons/x.png" alt="X"></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <span>Subscribe to our newsletter</span>
+                <form>
+                    <input type="email" placeholder="Email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link scripts -->
+    <script src="../js/navbar.js"></script>
+    <script src="../js/history.js"></script>
+</body>
+
+</html>

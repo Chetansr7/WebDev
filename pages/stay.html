@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Stay</title>
+    <link rel="stylesheet" href="..//css/stay.css">
+    <img class="myimg" src="..//images/photos/displayhotel.jpg">
+    <link rel="stylesheet" href="..//css/navbarfooter.css">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <a href="homepage.html">
+            <div class="logo">
+                <img src="../images/logo/mauritiuslogo.png" alt="Mauritius Logo">
+            </div>
+        </a>
+        <ul class="nav-links">
+            <li class="dropdown">
+                <button>Discover</button>
+                <div class="dropdown-content">
+                    <a href="history.html">History</a>
+                    <a href="culture.html">Culture</a>
+                    <a href="food.html">Food</a>
+                    <a href="language.html">Language</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button>Experience</button>
+                <div class="dropdown-content">
+                    <a href="activities.html">Activities</a>
+                    <a href="islandsandbeaches.html">Islands and Beaches</a>
+                    <a href="nightlife.html">Nightlife</a>
+                    <a href="events.html">Events</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button>Plan your visit</button>
+                <div class="dropdown-content">
+                    <a href="travelinfo.html">Travel information</a>
+                    <a href="travelling.html">Airline</a>
+                    <a href="stay.html">Stay</a>
+                    <a href="gettingaround.html">Getting around</a>
+                    <a href="faq.html">FAQs</a>
+                </div>
+            </li>
+        </ul>
+        <div class="user-options">
+            <!-- User Icon -->
+            <div class="user-icon">
+                <img src="../images/icons/accountuser.png" alt="User Icon">
+            </div>
+            <div class="dropdown1">
+                <button id="signUpBtn">Sign Up</button>
+                <div class="dropdown-content1">
+                    <a href="register.html">Register</a>
+                    <a href="signin.html">Sign In</a>
+                </div>
+            </div>
+
+
+
+            <!-- Mauritius Outline -->
+            <div class="mauritius-outline">
+                <img style="cursor: pointer;" src="../images/logo/mauritiusoutline.png" id="mauritiusoutline"
+                    alt="Mauritius Outline">
+            </div>
+            <!-- Modal Structure -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="..//images/photos/mapofmauritius.jpg" alt="mauritius">
+                </div>
+            </div>
+    </nav>
+
+    <!-- Register Modal Structure -->
+    <div id="registerModal" class="modal-register">
+        <div class="modal-content-register">
+            <span class="close-register">&times;</span>
+            <h2>Register</h2>
+            <!-- Register form content here -->
+            <form>
+                <div class="form-group">
+                    <input type="text" id="fullName" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sign In Modal Structure -->
+    <div id="signinModal" class="modal-signin">
+        <div class="modal-content-signin">
+            <span class="close-signin">&times;</span>
+            <h2>Sign In</h2>
+            <!-- Sign in form content here -->
+            <form>
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="text">
+        <h3>Accommodation in Mauritius</h3>
+    </div>
+
+    <div class="content-box">
+        <p>In Mauritius, tourists have a wide range of accommodation options to suit various preferences and budgets.
+            From luxurious beach resorts and boutique hotels to cozy guesthouses and self-catering apartments, the
+            island offers something for everyone. Many accommodations boast stunning ocean views, proximity to tourist
+            attractions, and amenities such as spas, pools, and water sports facilities. Whether you&#39;re looking for
+            a
+            relaxing beachfront stay or a cultural immersion in the island&#39;s inland regions, Mauritius provides
+            diverse
+            choices to enhance your holiday experience.
+        </p>
+        <p>Take a look at the accommodation types in Mauritius and start planning!
+        </p>
+
+        <h3>Hotels</h3>
+
+        <section class="container">
+            <div class="hotels-mru">
+                <div class="hotel">
+                    <img id="hotel-slide-1" src="..//images/photos/hotel1.png">
+                    <img id="hotel-slide-2" src="..//images/photos/hotel2.jpg">
+                    <img id="hotel-slide-3" src="..//images/photos/hotel3.jpg">
+                    <img id="hotel-slide-4" src="..//images/photos/hotel4.jpg">
+                    <img id="hotel-slide-5" src="..//images/photos/hotel5.jpg">
+                </div>
+                <div class="hotel-nav">
+                    <button onclick="prevHotelSlide()">&lt;</button>
+                    <button onclick="nextHotelSlide()">&gt;</button>
+                </div>
+            </div>
+        </section>
+
+        <p>Mauritius offers a captivating selection of hotels, each promising a unique blend of comfort and luxury.
+            Whether you&#39;re drawn to beachfront resorts with panoramic ocean views or boutique hotels nestled in lush
+            gardens, the island caters to every taste and preference. Discover a haven where impeccable service meets
+            tranquil surroundings, providing the perfect backdrop for an unforgettable getaway in Mauritius.</p>
+
+        <h3>Villas</h3>
+        <section class="container">
+            <div class="villa-mru">
+                <div class="villa">
+                    <img id="villa-slide-1" src="..//images/photos/villa1.jpg">
+                    <img id="villa-slide-2" src="..//images/photos/villa2.jpg">
+                    <img id="villa-slide-3" src="..//images/photos/villa3.jpg">
+                    <img id="villa-slide-4" src="..//images/photos/villa4.jpg">
+                    <img id="villa-slide-5" src="..//images/photos/villa5.jpg">
+                </div>
+                <div class="villa-nav">
+                    <button onclick="prevVillaSlide()">&lt;</button>
+                    <button onclick="nextVillaSlide()">&gt;</button>
+                </div>
+            </div>
+        </section>
+
+        <p>Escape to the enchanting island of Mauritius and stay in one of its luxurious villas, designed to provide an
+            unforgettable holiday experience. These stunning accommodations offer the perfect blend of elegance and
+            tranquility, with each villa featuring spacious living areas, lush gardens, and private pools. Wake up to
+            the sound of the ocean, enjoy al fresco dining with panoramic views, and immerse yourself in the
+            island&#39;s
+            rich culture and natural beauty. With dedicated concierge services, you can easily explore Mauritius&#39;
+            attractions, from its vibrant markets to its pristine beaches and scenic nature trails. Whether you seek
+            adventure or relaxation, villas in Mauritius offer an idyllic retreat that caters to all your desires.
+        </p>
+
+
+        <h3>AirBnB</h3>
+        <section class="container">
+            <div class="airbnb-mru">
+                <div class="airbnb">
+                    <img id="airbnb-slide-1" src="..//images/photos/airb1.jpg">
+                    <img id="airbnb-slide-2" src="..//images/photos/airb2.jpg">
+                    <img id="airbnb-slide-3" src="..//images/photos/airb3.jpg">
+                    <img id="airbnb-slide-4" src="..//images/photos/airb4.jpg">
+                    <img id="airbnb-slide-5" src="..//images/photos/airb5.jpg">
+                </div>
+                <div class="airbnb-nav">
+                    <button onclick="prevAirbnbSlide()">&lt;</button>
+                    <button onclick="nextAirbnbSlide()">&gt;</button>
+                </div>
+            </div>
+        </section>
+
+        <p>Experience the vibrant culture and natural beauty of Mauritius with a stay at one of the many unique Airbnb
+            accommodations available on the island. From charming beachfront bungalows to modern city apartments, Airbnb
+            offers a diverse range of options to suit every traveler&#39;s needs and budget. Enjoy the warmth of
+            Mauritian
+            hospitality as you stay in locally-owned properties, providing an authentic and personalized touch to your
+            holiday. Whether you&#39;re looking for a cozy retreat in the mountains, a stylish home in the heart of the
+            city, or a serene cottage by the sea, Airbnb hosts in Mauritius go the extra mile to ensure a memorable
+            stay. Embrace the island life with the flexibility and comfort of Airbnb, making your Mauritian adventure
+            truly one-of-a-kind.</p>
+
+
+        <h3>Lodge</h3>
+        <section class="container">
+            <div class="lodge-mru">
+                <div class="lodge">
+                    <img id="lodge-slide-1" src="..//images/photos/lodge1.jpg">
+                    <img id="lodge-slide-2" src="..//images/photos/lodge2.jpg">
+                    <img id="lodge-slide-3" src="..//images/photos/lodge3.jpg">
+                    <img id="lodge-slide-4" src="..//images/photos/lodge4.jpg">
+                    <img id="lodge-slide-5" src="..//images/photos/lodge5.jpg">
+                </div>
+                <div class="lodge-nav">
+                    <button onclick="prevlodgeSlide()">&lt;</button>
+                    <button onclick="nextlodgeSlide()">&gt;</button>
+                </div>
+            </div>
+        </section>
+
+        <h4>-Get up close to nature-</h4>
+        <p>Immerse yourself in the natural beauty and tranquility of Mauritius by staying at one of the island&#39;s
+            charming lodges. Perfectly nestled in lush landscapes, these lodges offer an intimate and rustic retreat for
+            nature lovers and adventure seekers alike. Wake up to the melodies of tropical birds, explore nearby hiking
+            trails, or simply relax on your private veranda with stunning views of verdant forests and crystal-clear
+            lagoons. With personalized service and a warm, welcoming atmosphere, lodges in Mauritius provide a cozy and
+            authentic experience, blending comfort with the island’s rich biodiversity. Whether you&#39;re looking for a
+            secluded hideaway or a base for exploring Mauritius&#39; natural wonders, these lodges offer a unique and
+            unforgettable stay.
+        </p>
+
+        <h3>Homestay</h3>
+        <section class="container">
+            <div class="homestay-mru">
+                <div class="homestay">
+                    <img id="homestay-slide-1" src="..//images/photos/home1.jpg">
+                    <img id="homestay-slide-2" src="..//images/photos/home2.jpg">
+                    <img id="homestay-slide-3" src="..//images/photos/home3.jpg">
+                    <img id="homestay-slide-4" src="..//images/photos/home4.jpg">
+                    <img id="homestay-slide-5" src="..//images/photos/home5.jpg">
+                </div>
+                <div class="homestay-nav">
+                    <button onclick="prevhomeSlide()">&lt;</button>
+                    <button onclick="nexthomeSlide()">&gt;</button>
+                </div>
+            </div>
+        </section>
+
+        <p>Homestays in Mauritius offer a unique and immersive experience for tourists seeking to connect deeply with
+            local culture and hospitality. Staying with Mauritian families provides a firsthand glimpse into daily life,
+            traditions, and authentic Mauritian cuisine. Hosts often warmly welcome guests into their homes, sharing
+            stories and local insights that guide visitors beyond typical tourist experiences. Whether nestled in
+            coastal villages, lush mountainsides, or bustling towns, homestays offer a cozy retreat where guests can
+            relax in a familial atmosphere after exploring Mauritius&#39; renowned beaches, nature reserves, and
+            cultural
+            sites. It&#39;s an excellent choice for travelers seeking a more personalized and enriching vacation
+            experience
+            in this beautiful island paradise.</p>
+
+        <p>----------------------------------------------------------------------------------------------------</p>
+
+        <p>With its stunning range of accommodation options, Mauritius promises a perfect stay for every traveler.
+            Secure your ideal getaway now and immerse yourself in the island&#39;s unparalleled beauty and comfort!</p>
+
+
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="..//images/icons/mauritiusflag.png" alt="Mauritius Flag">
+            </div>
+            <div class="footer-center">
+                <div class="textallrights">
+                    <p>&copy; 2024 Zilwa Ltd & Co. All rights reserved.</p><br>
+                </div>
+                <p>
+                    <a href="contactus.html">Contact Us</a> |
+                    <a href="privacy_policy.html">Privacy Policy</a> |
+                    <a href="terms_of_service.html">Terms of Service</a>
+                </p> <br>
+                <div class="social-media">
+                    <span class="Followus">Follow us |</span>
+                    <a href="#"><img src="..//images/icons/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="..//images/icons/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="..//images/icons/tiktok.png" alt="TikTok"></a>
+                    <a href="#"><img src="..//images/icons/youtube.png" alt="YouTube"></a>
+                    <a href="#"><img src="..//images/icons/x.png" alt="X"></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <span>Subscribe to our newsletter</span>
+                <form>
+                    <input type="email" placeholder="Email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link scripts -->
+    <script src="..//js/navbar.js"></script>
+    <script src="..//js/stay.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities</title>
+
+    <!-- Link css file -->
+    <link rel="stylesheet" href="..//css/activities.css">
+    <link rel="stylesheet" href="..//css/navbarfooter.css">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <a href="homepage.html">
+            <div class="logo">
+                <img src="../images/logo/mauritiuslogo.png" alt="Mauritius Logo">
+            </div>
+        </a>
+        <ul class="nav-links">
+            <li class="dropdown">
+                <button>Discover</button>
+                <div class="dropdown-content">
+                    <a href="history.html">History</a>
+                    <a href="culture.html">Culture</a>
+                    <a href="food.html">Food</a>
+                    <a href="language.html">Language</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button>Experience</button>
+                <div class="dropdown-content">
+                    <a href="activities.html">Activities</a>
+                    <a href="islandsandbeaches.html">Islands and Beaches</a>
+                    <a href="nightlife.html">Nightlife</a>
+                    <a href="events.html">Events</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button>Plan your visit</button>
+                <div class="dropdown-content">
+                    <a href="travelinfo.html">Travel information</a>
+                    <a href="travelling.html">Airline</a>
+                    <a href="stay.html">Stay</a>
+                    <a href="gettingaround.html">Getting around</a>
+                    <a href="faq.html">FAQs</a>
+                </div>
+            </li>
+        </ul>
+        <div class="user-options">
+            <!-- User Icon -->
+            <div class="user-icon">
+                <img src="../images/icons/accountuser.png" alt="User Icon">
+            </div>
+            <div class="dropdown1">
+                <button id="signUpBtn">Sign Up</button>
+                <div class="dropdown-content1">
+                    <a href="register.html">Register</a>
+                    <a href="signin.html">Sign In</a>
+                </div>
+            </div>
+
+
+
+            <!-- Mauritius Outline -->
+            <div class="mauritius-outline">
+                <img style="cursor: pointer;" src="../images/logo/mauritiusoutline.png" id="mauritiusoutline"
+                    alt="Mauritius Outline">
+            </div>
+            <!-- Modal Structure -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="..//images/photos/mapofmauritius.jpg" alt="mauritius">
+                </div>
+            </div>
+    </nav>
+
+    <!-- Register Modal Structure -->
+    <div id="registerModal" class="modal-register">
+        <div class="modal-content-register">
+            <span class="close-register">&times;</span>
+            <h2>Register</h2>
+            <!-- Register form content here -->
+            <form>
+                <div class="form-group">
+                    <input type="text" id="fullName" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sign In Modal Structure -->
+    <div id="signinModal" class="modal-signin">
+        <div class="modal-content-signin">
+            <span class="close-signin">&times;</span>
+            <h2>Sign In</h2>
+            <!-- Sign in form content here -->
+            <form>
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- background image -->
+    <div class="background-container">
+        <img id="backgroundimg" src="..//images/photos/activities4.jpg" alt="backgroundimg">
+        <h3 class="backgroundtext">Activities</h3>
+    </div>
+
+    <div class="content-box">
+
+        <!-- Descriptive text -->
+        <div class="descriptivetext">
+            <p>
+                Mauritius offers a world of exciting activities that cater to every taste! Whether you&#39;re seeking
+                thrills
+                or relaxation, you&#39;ll find it all here. Go on an exhilarating hike through lush landscapes, or
+                embark on
+                a
+                scenic adventure with a variety of outdoor sports. </p> <br>
+            <p> Dive into the island&#39;s rich culture with vibrant
+                local festivals and markets, where you can savor delicious cuisine and enjoy lively music. If you&#39;re
+                looking for something unique, try out a range of exciting water activities. 🍽️ Mauritius is brimming
+                with adventures and experiences that promise to make your stay
+                unforgettable! 🌟 </p>
+        </div>
+
+        <!-- First slideshow -->
+        <h1 class="section-title">1. La Vallée Des Couleurs Nature Park</h1>
+        <div class="container">
+            <div class="explanatory-text">
+                <p>If you&#39;re into exploring nature, you&#39;ve gotta check out La Vallée des Couleurs Nature Park in
+                    Mauritius. It&#39;s this super cool park with vibrant, colorful landscapes that&#39;ll blow your
+                    mind!
+                    You can hike through lush greenery, and the highlight is definitely the seven-colored earth—it&#39;s
+                    like Mother Nature&#39;s own art show!
+
+                    They&#39;ve got loads of activities too. You can zip-line across the park, which is an epic way to
+                    take
+                    in the scenery from above. If you&#39;re into something a bit more chill, try the quad biking or
+                    just
+                    a relaxing stroll around the park. And don&#39;t miss out on the giant swing if you&#39;re feeling
+                    adventurous! </p>
+            </div>
+
+            <div class="slideshow" id="slideshow1">
+                <div class="slide active">
+                    <img src="..//images/photos/lvdc1.webp" alt="La Vallée Des Couleurs Nature Park 1">
+                </div>
+                <div class="slide">
+                    <img src="..//images/photos/lvdc2.jpg" alt="La Vallée Des Couleurs Nature Park 2">
+                </div>
+                <div class="slide">
+                    <img src="..//images/photos/lvdc3.jpg" alt="La Vallée Des Couleurs Nature Park 3">
+                </div>
+                <div class="slide">
+                    <img src="..//images/photos/lvdc4.jpg" alt="La Vallée Des Couleurs Nature Park 4">
+                </div>
+                <div class="slide">
+                    <img src="..//images/photos/lvdc5.jpg" alt="La Vallée Des Couleurs Nature Park 5">
+                </div>
+                <div class="slide">
+                    <img src="..//images/photos/lvdc6.jpg" alt="La Vallée Des Couleurs Nature Park 6">
+                </div>
+                <div class="navigation">
+                    <button class="prev" id="prev1">
+                        <img src="..//images/icons/left-arrow.png" alt="Previous">
+                    </button>
+                    <button class="next" id="next1">
+                        <img src="..//images/icons/right-arrow.png" alt="Next">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Slideshow -->
+        <h1 class="section-title">2. Chamarel</h1>
+        <div class="container">
+            <div class="explanatory-text">
+                <p>The area is home to a wide array of natural and cultural sites: a unique geological curiosity in the
+                    world, the tallest waterfall on the island, lush forests, as well as a surprising museum and the
+                    manufacturing of Mauritian rum!</p>
+                <p>The slideshow features beautiful images that change smoothly with a fade transition effect.</p>
+            </div>
+
+            <div class="slideshow" id="slideshow2">
+                <div class="slide active">
+                    <img src="..//images/photos/chamarel1.jpg" alt="Chamarel 1">
+                </div>
+                <div class="slide">
+                    <img src="..//images/photos/chamarel2.jpg" alt="Chamarel 2">
+                </div>
+                <div class="slide">
+                    <img src="..//images/photos/chamarel3.jpg" alt="Chamarel 3">
+                </div>
+                <div class="navigation">
+                    <button class="prev" id="prev2">
+                        <img src="..//images/icons/left-arrow.png" alt="Previous">
+                    </button>
+                    <button class="next" id="next2">
+                        <img src="..//images/icons/right-arrow.png" alt="Next">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third Slideshow -->
+        <h1 class="section-title">3. Casela</h1>
+        <div class="container">
+            <div class="explanatory-text">
+                <p>It&#39;s not just a zoo—it&#39;s an adventure park with a ton of activities to dive into. From safari
+                    tours
+                    where you can get up close with lions and zebras, to thrilling zip-lines and quad biking
+                    through the lush landscape, there&#39;s something for everyone.</p>
+            </div>
+
+            <div class="slideshow" id="slideshow3">
+                <div class="slide active">
+                    <img src="..//images/photos/casela1.jpg" alt="Casela 1">
+                </div>
+                <div class="slide">
+                    <img src="..//images/photos/casela2.jpg" alt="Casela 2">
+                </div>
+                <div class="slide">
+                    <img src="..//images/photos/casela3.jpg" alt="Casela 3">
+                </div>
+                <div class="slide">
+                    <img src="..//images/photos/casela4.jpg" alt="Casela 3">
+                </div>
+                <div class="slide">
+                    <img src="..//images/photos/casela5.webp" alt="Casela 3">
+                </div>
+                <div class="navigation">
+                    <button class="prev" id="prev3">
+                        <img src="..//images/icons/left-arrow.png" alt="Previous">
+                    </button>
+                    <button class="next" id="next3">
+                        <img src="..//images/icons/right-arrow.png" alt="Next">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Fourth Slideshow -->
+        <h1 class="section-title">4. La Vanille Nature Park</h1>
+        <div class="container">
+            <div class="explanatory-text">
+                <p>The park is famous for its impressive collection of giant tortoises, some of which are over a century
+                    old. It’s a great place to get up close and personal with these gentle giants and even feed them!
+
+                    The park also boasts a lush, tropical environment with various other animals and plants. You can
+                    spot crocodiles, monkeys, and a range of exotic birds. For a unique experience, visit the
+                    insectarium to see a fascinating array of bugs and butterflies</p>
+                <p>The slideshow features beautiful images that change smoothly with a fade transition effect.</p>
+            </div>
+
+            <div class="slideshow" id="slideshow4">
+                <div class="slide active">
+                    <img src="..//images/photos/lavanille1.jpg" alt="La Vanille 1">
+                </div>
+                <div class="slide">
+                    <img src="..//images/photos/lavanille2.jpg" alt="La Vanille 2">
+                </div>
+                <div class="slide">
+                    <img src="..//images/photos/lavanille3.jpg" alt="La Vanille 3">
+                </div>
+                <div class="slide">
+                    <img src="..//images/photos/lavanille4.jpg" alt="La Vanille 4">
+                </div>
+                <div class="slide">
+                    <img src="..//images/photos/lavanille5.jpg" alt="La Vanille 5">
+                </div>
+                <div class="slide">
+                    <img src="..//images/photos/lavanille6.jpg" alt="La Vanille 6">
+                </div>
+                <div class="navigation">
+                    <button class="prev" id="prev3">
+                        <img src="..//images/icons/left-arrow.png" alt="Previous">
+                    </button>
+                    <button class="next" id="next3">
+                        <img src="..//images/icons/right-arrow.png" alt="Next">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fifth Slideshow -->
+        <h1 class="section-title">5. Black River Gorges National park</h1>
+        <div class="container">
+            <div class="explanatory-text">
+                <p>Whether you&#39;re into serious hiking or just want to enjoy a peaceful nature walk, Black River
+                    Gorges
+                    has something for everyone. It&#39;s a fantastic spot to connect with nature and escape the hustle
+                    and
+                    bustle of everyday life. It&#39;s the island&#39;s largest national park, covering a vast area of
+                    lush
+                    forest, dramatic gorges, and stunning waterfalls.
+
+                    The park is a haven for diverse wildlife, including endemic birds like the Mauritius kestrel and the
+                    echo parakeet. The hiking trails offer breathtaking views and lead you through dense forests and
+                    past scenic lookout points.</p>
+            </div>
+
+            <div class="slideshow" id="slideshow5">
+                <div class="slide active">
+                    <img src="..//images/photos/blackrivergorges1.jpg" alt="Black River Gorges 1">
+                </div>
+                <div class="slide">
+                    <img src="..//images/photos/blackrivergorges2.avif" alt="Black River Gorges 2">
+                </div>
+                <div class="slide">
+                    <img src="..//images/photos/blackrivergorges3.png" alt="Black River Gorges 3">
+                </div>
+                <div class="navigation">
+                    <button class="prev" id="prev3">
+                        <img src="..//images/icons/left-arrow.png" alt="Previous">
+                    </button>
+                    <button class="next" id="next3">
+                        <img src="..//images/icons/right-arrow.png" alt="Next">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sixth Slideshow -->
+        <h1 class="section-title">6. Port Louis</h1>
+        <div class="container">
+            <div class="explanatory-text">
+                <p>Start your adventure at Caudan Waterfront, a lively hub where you can enjoy some great shopping and
+                    dining with a beautiful view of the harbor 🌊🛥️. The waterfront is perfect for a leisurely stroll,
+                    and you can find some unique souvenirs and local crafts at the shops and stalls.
+
+                    Next, dive into the heart of the city with a walk through the Central Market 🛒. This bustling
+                    market is a sensory overload in the best way possible—think colorful spices, fresh produce, and a
+                    range of local goodies. It’s a fantastic place to sample Mauritian street food, soak up the vibrant
+                    atmosphere, and experience the local culture firsthand</p>
+            </div>
+
+            <div class="slideshow" id="slideshow6">
+                <div class="slide active">
+                    <img src="..//images/photos/bazar1.jpg" alt="Port Louis 1">
+                </div>
+                <div class="slide">
+                    <img src="..//images/photos/bazarr2.jpg" alt="Port Louis 2">
+                </div>
+                <div class="slide">
+                    <img src="..//images/photos/bazarr3.jpg" alt="Port Louis 3">
+                </div>
+                <div class="slide">
+                    <img src="..//images/photos/bazar4.jpg" alt="Port Louis 4">
+                </div>
+                <div class="navigation">
+                    <button class="prev" id="prev3">
+                        <img src="..//images/icons/left-arrow.png" alt="Previous">
+                    </button>
+                    <button class="next" id="next3">
+                        <img src="..//images/icons/right-arrow.png" alt="Next">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="..//images/icons/mauritiusflag.png" alt="Mauritius Flag">
+            </div>
+            <div class="footer-center">
+                <div class="textallrights">
+                    <p>&copy; 2024 Zilwa Ltd & Co. All rights reserved.</p><br>
+                </div>
+                <p>
+                    <a href="contactus.html">Contact Us</a> |
+                    <a href="privacy_policy.html">Privacy Policy</a> |
+                    <a href="terms_of_service.html">Terms of Service</a>
+                </p> <br>
+                <div class="social-media">
+                    <span class="Followus">Follow us |</span>
+                    <a href="#"><img src="..//images/icons/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="..//images/icons/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="..//images/icons/tiktok.png" alt="TikTok"></a>
+                    <a href="#"><img src="..//images/icons/youtube.png" alt="YouTube"></a>
+                    <a href="#"><img src="..//images/icons/x.png" alt="X"></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <span>Subscribe to our newsletter</span>
+                <form>
+                    <input type="email" placeholder="Email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <!-- Link scripts -->
+    <script src="../js/navbar.js"></script>
+    <script src="../js/activities.js"></script>
+
+</body>
+
+
+</html>

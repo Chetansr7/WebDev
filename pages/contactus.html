@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="..//css/navbarfooter.css">
+    <link rel="stylesheet" href="..//css/contactus.css">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <a href="homepage.html">
+            <div class="logo">
+                <img src="../images/logo/mauritiuslogo.png" alt="Mauritius Logo">
+            </div>
+        </a>
+        <ul class="nav-links">
+            <li class="dropdown">
+                <button>Discover</button>
+                <div class="dropdown-content">
+                    <a href="history.html">History</a>
+                    <a href="culture.html">Culture</a>
+                    <a href="food.html">Food</a>
+                    <a href="language.html">Language</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button>Experience</button>
+                <div class="dropdown-content">
+                    <a href="activities.html">Activities</a>
+                    <a href="islandsandbeaches.html">Islands and Beaches</a>
+                    <a href="nightlife.html">Nightlife</a>
+                    <a href="events.html">Events</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button>Plan your visit</button>
+                <div class="dropdown-content">
+                    <a href="travelinfo.html">Travel information</a>
+                    <a href="travelling.html">Airline</a>
+                    <a href="stay.html">Stay</a>
+                    <a href="gettingaround.html">Getting around</a>
+                    <a href="faq.html">FAQs</a>
+                </div>
+            </li>
+        </ul>
+        <div class="user-options">
+            <!-- User Icon -->
+            <div class="user-icon">
+                <img src="../images/icons/accountuser.png" alt="User Icon">
+            </div>
+            <div class="dropdown1">
+                <button id="signUpBtn">Sign Up</button>
+                <div class="dropdown-content1">
+                    <a href="register.html">Register</a>
+                    <a href="signin.html">Sign In</a>
+                </div>
+            </div>
+
+
+
+            <!-- Mauritius Outline -->
+            <div class="mauritius-outline">
+                <img style="cursor: pointer;" src="../images/logo/mauritiusoutline.png" id="mauritiusoutline"
+                    alt="Mauritius Outline">
+            </div>
+            <!-- Modal Structure -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="..//images/photos/mapofmauritius.jpg" alt="mauritius">
+                </div>
+            </div>
+    </nav>
+
+    <!-- Register Modal Structure -->
+    <div id="registerModal" class="modal-register">
+        <div class="modal-content-register">
+            <span class="close-register">&times;</span>
+            <h2>Register</h2>
+            <!-- Register form content here -->
+            <form>
+                <div class="form-group">
+                    <input type="text" id="fullName" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sign In Modal Structure -->
+    <div id="signinModal" class="modal-signin">
+        <div class="modal-content-signin">
+            <span class="close-signin">&times;</span>
+            <h2>Sign In</h2>
+            <!-- Sign in form content here -->
+            <form>
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- contact us -->
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>We would love to hear from you!
+            Feel free to reach out to us.</p>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="..//js/contactUs.js"></script>
+    <script src="..//js/navbar.js"></script>
+
+</body>
+
+</html>

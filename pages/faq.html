@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="..//css/faq.css">
+    <link rel="stylesheet" href="..//css/navbarfooter.css">
+    <img class="myimg" src="..//images/photos/faqmain.JPG">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <a href="homepage.html">
+            <div class="logo">
+                <img src="../images/logo/mauritiuslogo.png" alt="Mauritius Logo">
+            </div>
+        </a>
+        <ul class="nav-links">
+            <li class="dropdown">
+                <button>Discover</button>
+                <div class="dropdown-content">
+                    <a href="history.html">History</a>
+                    <a href="culture.html">Culture</a>
+                    <a href="food.html">Food</a>
+                    <a href="language.html">Language</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button>Experience</button>
+                <div class="dropdown-content">
+                    <a href="activities.html">Activities</a>
+                    <a href="islandsandbeaches.html">Islands and Beaches</a>
+                    <a href="nightlife.html">Nightlife</a>
+                    <a href="events.html">Events</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button>Plan your visit</button>
+                <div class="dropdown-content">
+                    <a href="travelinfo.html">Travel information</a>
+                    <a href="travelling.html">Airline</a>
+                    <a href="stay.html">Stay</a>
+                    <a href="gettingaround.html">Getting around</a>
+                    <a href="faq.html">FAQs</a>
+                </div>
+            </li>
+        </ul>
+        <div class="user-options">
+            <!-- User Icon -->
+            <div class="user-icon">
+                <img src="../images/icons/accountuser.png" alt="User Icon">
+            </div>
+            <div class="dropdown1">
+                <button id="signUpBtn">Sign Up</button>
+                <div class="dropdown-content1">
+                    <a href="register.html">Register</a>
+                    <a href="signin.html">Sign In</a>
+                </div>
+            </div>
+
+
+
+            <!-- Mauritius Outline -->
+            <div class="mauritius-outline">
+                <img style="cursor: pointer;" src="../images/logo/mauritiusoutline.png" id="mauritiusoutline"
+                    alt="Mauritius Outline">
+            </div>
+            <!-- Modal Structure -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="..//images/photos/mapofmauritius.jpg" alt="mauritius">
+                </div>
+            </div>
+    </nav>
+
+    <!-- Register Modal Structure -->
+    <div id="registerModal" class="modal-register">
+        <div class="modal-content-register">
+            <span class="close-register">&times;</span>
+            <h2>Register</h2>
+            <!-- Register form content here -->
+            <form>
+                <div class="form-group">
+                    <input type="text" id="fullName" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sign In Modal Structure -->
+    <div id="signinModal" class="modal-signin">
+        <div class="modal-content-signin">
+            <span class="close-signin">&times;</span>
+            <h2>Sign In</h2>
+            <!-- Sign in form content here -->
+            <form>
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="text">
+        <h3>Frequently Asked Questions</h3>
+    </div>
+
+    <div class="content-box">
+        <h1><b>-INSURANCE QUESTIONS-</b></h1>
+        <h3>Do I need insurance to travel to Mauritius?</h3>
+        <p>Travel insurance is advisable but not mandatory at this time.</p>
+
+        <h1><b>– GUEST EXPERIENCE –</b></h1>
+        <h3>Will guests need to wear a mask?</h3>
+        <p>You do not need to wear a face mask during your holiday. It is only recommended in airports, during airport
+            transfers and on public transport. It is also recommended in healthcare settings, such as hospitals and
+            pharmacies. It is mandatory to wear a mask if you have tested positive for COVID-19.
+            We also recommend wearing a facemask if you are over 60 years of age, if you are immunocompromised or have
+            comorbidities, or if you are in a very confined space.</p>
+
+        <h3>Are there family-friendly activities in Mauritius?</h3>
+        <p>Yes, Mauritius is a family-friendly destination with numerous activities for children and adults alike. These
+            include water parks, nature reserves, boat tours, and family-friendly resorts with kids&#39; clubs.</p>
+
+        <h3>What are some must-try local dishes?</h3>
+        <p>Some must-try local dishes include:
+
+            <br><b>Dholl Puri</b>: Flatbread filled with ground split peas.
+            <br><b>Rougaille</b>: A tomato-based sauce often served with fish or meat.
+            <br><b>Gâteau Piment</b>: Spicy lentil fritters.
+            <br><b>Fresh seafood</b>, particularly grilled fish and shellfish.
+        </p>
+
+        <h1><b>– CHILDREN AND FAMILIES –</b></h1>
+        <h3>Will children need to do COVID testing?</h3>
+        <p>No. The rules for travellers, regardless of vaccination status, are the same. You do not need to do COVID-19
+            tests.</p>
+
+        <h3><b>Do children need to be vaccinated?</b></h3>
+        <p>No. The rules for travellers, regardless of vaccination status or age, are the same. You do not need to be
+            vaccinated to enter Mauritius. It is recommended that children over 5 years old, as well as adults, wear a
+            mask at ports, airports, during airport transfers and on public transport. A mask is also recommended in
+            healthcare settings, including hospitals and pharmacies.</p>
+
+        <h3><b>Will kids’ and teens’ clubs and babysitting services be available?</b></h3>
+        <p>Access will be allowed to the kids/teens’ club in compliance with sanitary protocols, with mandatory closing
+            time during the day for full disinfection and compulsory pre-registration.
+            The number of children will be limited at all times (with a defined maximum number of children per staff
+            member) with a preference for outdoor activities.
+            Babysitting service is allowed, provided that the babysitter and his/her immediate family members living in
+            the same household have received two doses of COVID-19 vaccine at least 14 days beforehand (28 days if a
+            Johnson & Johnson vaccine).
+        </p>
+
+        <h1><b>-GENERAL QUESTIONS-</b></h1>
+        <h3><b>Is Mauritius safe for tourists?</b></h3>
+        <p>Mauritius is generally considered a safe destination for tourists. However, as with any travel destination,
+            it is advisable to take standard precautions such as avoiding isolated areas at night, keeping valuables
+            secure, and being aware of your surroundings.
+        </p>
+
+        <h3><b>What currency is used in Mauritius?</b></h3>
+        <p>The currency used in Mauritius is the Mauritian Rupee (MUR). It is advisable to carry some local currency for
+            small purchases, though credit cards are widely accepted in hotels, restaurants, and larger stores.</p>
+
+        <h3><b>What is the best time to visit Mauritius?</b></h3>
+        <p>The best time to visit Mauritius is during the cooler, dry months from May to December. The weather is
+            pleasant, and there is less humidity, making it ideal for outdoor activities and exploring the island.
+        </p>
+
+        <h3><b>What should I wear in Mauritius?</b></h3>
+        <p>Lightweight clothing suitable for tropical weather is ideal, especially breathable fabrics. If you plan to
+            visit religious sites or formal venues, modest attire is appreciated. Don&#39;t forget sunscreen and a hat
+            for
+            protection from the sun.
+        </p>
+
+        <h3>What is the cuisine like in Mauritius?</h3>
+        <p>Mauritian cuisine is a delightful blend of Indian, Chinese, French, and Creole influences. Popular dishes
+            include dholl puri (a type of flatbread), seafood curries, rougaille (tomato-based sauce), and various
+            tropical fruits.</p>
+
+        <h3>What is the capital of Mauritius?</h3>
+        <p>The capital of Mauritius is Port Louis.</p>
+
+        <h3>What is the main religion in Mauritius?</h3>
+        <p>Mauritius is a multicultural society with several religions. Hinduism is the largest religion, followed by
+            Christianity, Islam, and Buddhism.</p>
+
+        <h3>What type of electrical outlets are used in Mauritius?</h3>
+        <p>Mauritius uses Type C and Type G electrical outlets. The standard voltage is 230 V, and the standard
+            frequency is 50 Hz.</p>
+
+        <h3>-----------------------------------------------------------------------------------------------</h3>
+
+        <p>We hope these FAQs have answered your questions and provided valuable insights into your upcoming visit to
+            Mauritius. For any further inquiries or personalised assistance, please feel free to contact us.</p>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="..//images/icons/mauritiusflag.png" alt="Mauritius Flag">
+            </div>
+            <div class="footer-center">
+                <div class="textallrights">
+                    <p>&copy; 2024 Zilwa Ltd & Co. All rights reserved.</p><br>
+                </div>
+                <p>
+                    <a href="contactus.html">Contact Us</a> |
+                    <a href="privacy_policy.html">Privacy Policy</a> |
+                    <a href="terms_of_service.html">Terms of Service</a>
+                </p> <br>
+                <div class="social-media">
+                    <span class="Followus">Follow us |</span>
+                    <a href="#"><img src="..//images/icons/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="..//images/icons/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="..//images/icons/tiktok.png" alt="TikTok"></a>
+                    <a href="#"><img src="..//images/icons/youtube.png" alt="YouTube"></a>
+                    <a href="#"><img src="..//images/icons/x.png" alt="X"></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <span>Subscribe to our newsletter</span>
+                <form>
+                    <input type="email" placeholder="Email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link scripts -->
+    <script src="../js/navbar.js"></script>
+
+</body>
+
+</html>

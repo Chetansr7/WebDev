@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="..//css/navbarfooter.css">
+    <link rel="stylesheet" href="..//css/events.css">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <a href="homepage.html">
+            <div class="logo">
+                <img src="../images/logo/mauritiuslogo.png" alt="Mauritius Logo">
+            </div>
+        </a>
+        <ul class="nav-links">
+            <li class="dropdown">
+                <button>Discover</button>
+                <div class="dropdown-content">
+                    <a href="history.html">History</a>
+                    <a href="culture.html">Culture</a>
+                    <a href="food.html">Food</a>
+                    <a href="language.html">Language</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button>Experience</button>
+                <div class="dropdown-content">
+                    <a href="activities.html">Activities</a>
+                    <a href="islandsandbeaches.html">Islands and Beaches</a>
+                    <a href="nightlife.html">Nightlife</a>
+                    <a href="events.html">Events</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button>Plan your visit</button>
+                <div class="dropdown-content">
+                    <a href="travelinfo.html">Travel information</a>
+                    <a href="travelling.html">Airline</a>
+                    <a href="stay.html">Stay</a>
+                    <a href="gettingaround.html">Getting around</a>
+                    <a href="faq.html">FAQs</a>
+                </div>
+            </li>
+        </ul>
+        <div class="user-options">
+            <!-- User Icon -->
+            <div class="user-icon">
+                <img src="../images/icons/accountuser.png" alt="User Icon">
+            </div>
+            <div class="dropdown1">
+                <button id="signUpBtn">Sign Up</button>
+                <div class="dropdown-content1">
+                    <a href="register.html">Register</a>
+                    <a href="signin.html">Sign In</a>
+                </div>
+            </div>
+
+
+
+            <!-- Mauritius Outline -->
+            <div class="mauritius-outline">
+                <img style="cursor: pointer;" src="../images/logo/mauritiusoutline.png" id="mauritiusoutline"
+                    alt="Mauritius Outline">
+            </div>
+            <!-- Modal Structure -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="..//images/photos/mapofmauritius.jpg" alt="mauritius">
+                </div>
+            </div>
+    </nav>
+
+    <!-- Register Modal Structure -->
+    <div id="registerModal" class="modal-register">
+        <div class="modal-content-register">
+            <span class="close-register">&times;</span>
+            <h2>Register</h2>
+            <!-- Register form content here -->
+            <form>
+                <div class="form-group">
+                    <input type="text" id="fullName" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sign In Modal Structure -->
+    <div id="signinModal" class="modal-signin">
+        <div class="modal-content-signin">
+            <span class="close-signin">&times;</span>
+            <h2>Sign In</h2>
+            <!-- Sign in form content here -->
+            <form>
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- background image -->
+    <div class="background-container">
+        <img id="backgroundimg" src="..//images/photos/mystik.jpg" alt="backgroundimg">
+        <h3 class="backgroundtext">Events</h3>
+    </div>
+
+    <div class="content-box">
+        <div class="descriptivetext">
+            <p>
+                Dive into the rhythm of our island with the most electrifying music and DJ events. Imagine dancing under
+                the stars on pristine beaches, or getting
+                lost in the beats at lush jungle parties. <br><br>From sunset sessions with world-class DJs to exclusive
+                underground festivals, we bring you the best in music and nightlife. Get ready to experience
+                unforgettable nights in paradise, where the vibe is always electric and the party never stops.</p>
+        </div>
+        <!-- Did you know? -->
+
+
+        <div class="containerevent">
+            <div class="imageevent">
+                <img src="..//images/photos/djash.jpg" alt="Misty Mountain">
+            </div>
+            <div class="content">
+                <h2>DJ ASH</h2>
+                <div class="icon-container">
+                    <div class="location">
+                        <img id="contenticon" src="..//images/icons/iconlocation.png" alt="Location Icon">
+                        <h4>Mystik Garden, Balaclava</h4>
+                    </div>
+                    <div class="date">
+                        <img id="dateicon" src="..//images/icons/icondate.png" alt="Date Icon">
+                        <h5>September 6, 2024</h4>
+                    </div>
+                </div>
+                <p>Badboibeats is at it again! This night’s gonna be all about amazing beats and non-stop fun. Don’t
+                    miss out on the chance to party
+                    with us—grab your tickets and let’s make it a night to remember! </p>
+                <a href="#">Read →</a>
+            </div>
+        </div>
+
+        <div class="containerevent">
+            <div class="imageevent">
+                <img src="..//images/photos/porlwibylight.jpg" alt="Misty Mountain">
+            </div>
+            <div class="content">
+                <h2>Porlwi By Light</h2>
+                <div class="icon-container">
+                    <div class="location">
+                        <img id="contenticon" src="..//images/icons/iconlocation.png" alt="Location Icon">
+                        <h4>Port Louis</h4>
+                    </div>
+                    <div class="date">
+                        <img id="dateicon" src="..//images/icons/icondate.png" alt="Date Icon">
+                        <h5>September 7, 2024</h4>
+                    </div>
+                </div>
+                <p>Super cool light festival in Port Louis that turns the city into a magical wonderland with amazing
+                    light installations and art displays. Perfect spot for a fun night out. </p>
+                <a href="#">Read →</a>
+            </div>
+        </div>
+
+
+
+        <div class="containerevent">
+            <div class="imageevent">
+                <img src="..//images/photos/theprophecy.jpg" alt="Misty Mountain">
+            </div>
+            <div class="content">
+                <h2>The Prophecy</h2>
+                <div class="icon-container">
+                    <div class="location">
+                        <img id="contenticon" src="..//images/icons/iconlocation.png" alt="Location Icon">
+                        <h4>Big Willy&#39;s, Tamarin</h4>
+                    </div>
+                    <div class="date">
+                        <img id="dateicon" src="..//images/icons/icondate.png" alt="Date Icon">
+                        <h5>October 11, 2024</h4>
+                    </div>
+                </div>
+                <p>Seggae Vibes Incoming! Experience the perfect blend of reggae beats with a touch of mellow groove,
+                    designed to make you sway and chill. Don&#39;t miss out—grab your tickets and let the good vibes
+                    roll!
+                </p>
+                <a href="#">Read →</a>
+            </div>
+        </div>
+
+        <div class="containerevent">
+            <div class="imageevent">
+                <img src="..//images/photos/skytobe.jpg" alt="Misty Mountain">
+            </div>
+            <div class="content">
+                <h2>Sky To Be</h2>
+                <div class="icon-container">
+                    <div class="location">
+                        <img id="contenticon" src="..//images/icons/iconlocation.png" alt="Location Icon">
+                        <h4>Gros Sega, Pointe Canon</h4>
+                    </div>
+                    <div class="date">
+                        <img id="dateicon" src="..//images/icons/icondate.png" alt="Date Icon">
+                        <h5>November 14, 2024</h4>
+                    </div>
+                </div>
+                <p>Sega, with its vibrant beats and soulful melodies, will keep you dancing and swaying all night long.
+                    Don’t miss this chance to experience the magic of Sega. </p>
+                <a href="#">Read →</a>
+            </div>
+        </div>
+
+        <div class="containerevent">
+            <div class="imageevent">
+                <img src="..//images/photos/djrb.jpg" alt="Misty Mountain">
+            </div>
+            <div class="content">
+                <h2>DJ RB</h2>
+                <div class="icon-container">
+                    <div class="location">
+                        <img id="contenticon" src="..//images/icons/iconlocation.png" alt="Location Icon">
+                        <h4>Mystik Garden, Balaclava</h4>
+                    </div>
+                    <div class="date">
+                        <img id="dateicon" src="..//images/icons/icondate.png" alt="Date Icon">
+                        <h5>November 23, 2024</h4>
+                    </div>
+                </div>
+                <p>Expect an electrifying mix of trance and techno that will lift your spirits and keep you dancing all
+                    night. From uplifting melodies to driving rhythms, DJ RB will take you on a musical journey like no
+                    other. </p>
+                <a href="#">Read →</a>
+            </div>
+        </div>
+
+        <div class="containerevent">
+            <div class="imageevent">
+                <img src="..//images/photos/laurabeg.jpg" alt="Misty Mountain">
+            </div>
+            <div class="content">
+                <h2>Laura Beg</h2>
+                <div class="icon-container">
+                    <div class="location">
+                        <img id="contenticon" src="..//images/icons/iconlocation.png" alt="Location Icon">
+                        <h4>Le Maritime, Belle Mare</h4>
+                    </div>
+                    <div class="date">
+                        <img id="dateicon" src="..//images/icons/icondate.png" alt="Date Icon">
+                        <h5>November 29, 2024</h4>
+                    </div>
+                </div>
+                <p> From her soulful ballads to her energetic hits, Laura Beg will have you singing and dancing all
+                    night long. Don’t miss out on this special event—grab your tickets now and be part of the magic!
+                </p>
+                <a href="#">Read →</a>
+            </div>
+        </div>
+
+        <div class="containerevent">
+            <div class="imageevent">
+                <img src="..//images/photos/mrlove.jpg" alt="Misty Mountain">
+            </div>
+            <div class="content">
+                <h2>Mr Love</h2>
+                <div class="icon-container">
+                    <div class="location">
+                        <img id="contenticon" src="..//images/icons/iconlocation.png" alt="Location Icon">
+                        <h4>Safari Bar, Grand Baie</h4>
+                    </div>
+                    <div class="date">
+                        <img id="dateicon" src="..//images/icons/icondate.png" alt="Date Icon">
+                        <h5>December 6, 2024</h4>
+                    </div>
+                </div>
+                <p>The melodies are uplifting, and the spirit of celebration is contagious. From traditional Sega tunes
+                    to his modern hits, Mr Love&#39;s performance will have you dancing and celebrating all night long.
+                </p>
+                <a href="#">Read →</a>
+            </div>
+        </div>
+
+        <div class="containerevent">
+            <div class="imageevent">
+                <img src="..//images/photos/maeva.jpg" alt="Misty Mountain">
+            </div>
+            <div class="content">
+                <h2>Maevaa</h2>
+                <div class="icon-container">
+                    <div class="location">
+                        <img id="contenticon" src="..//images/icons/iconlocation.png" alt="Location Icon">
+                        <h4>OMG, Grand Baie</h4>
+                    </div>
+                    <div class="date">
+                        <img id="dateicon" src="..//images/icons/icondate.png" alt="Date Icon">
+                        <h5>December 7, 2024</h4>
+                    </div>
+                </div>
+                <p>Whether you&#39;re a longtime fan or new to the genre, this event
+                    promises to be an exhilarating experience that showcases the best of Mauritian music. </p>
+                <a href="#">Read →</a>
+            </div>
+        </div>
+
+        <div class="containerevent">
+            <div class="imageevent">
+                <img src="..//images/photos/zulu.jpeg" alt="Misty Mountain">
+            </div>
+            <div class="content">
+                <h2>Zulu</h2>
+                <div class="icon-container">
+                    <div class="location">
+                        <img id="contenticon" src="..//images/icons/iconlocation.png" alt="Location Icon">
+                        <h4>Strike City, Flacq</h4>
+                    </div>
+                    <div class="date">
+                        <img id="dateicon" src="..//images/icons/icondate.png" alt="Date Icon">
+                        <h5>January 17, 2025</h4>
+                    </div>
+                </div>
+                <p>Come and experience Zulu’s electrifying performance and dance the night away to his catchy tunes. You
+                    know his songs, you love his vibe—now see him live!</p>
+                <a href="#">Read →</a>
+            </div>
+        </div>
+
+        <div class="containerevent">
+            <div class="imageevent">
+                <img src="..//images/photos/jokerkartel.jpeg" alt="Misty Mountain">
+            </div>
+            <div class="content">
+                <h2>Joker Kartel</h2>
+                <div class="icon-container">
+                    <div class="location">
+                        <img id="contenticon" src="..//images/icons/iconlocation.png" alt="Location Icon">
+                        <h4>Shotz, Flic En Flac</h4>
+                    </div>
+                    <div class="date">
+                        <img id="dateicon" src="..//images/icons/icondate.png" alt="Date Icon">
+                        <h5>February 1, 2025</h4>
+                    </div>
+                </div>
+                <p>Expect a night packed with insane beats, killer tunes, and pure energy as Joker Kartel brings the
+                    house down.</p>
+                <a href="#">Read →</a>
+            </div>
+        </div>
+
+        <div class="containerevent">
+            <div class="imageevent">
+                <img src="..//images/photos/shehzad.jpg" alt="Misty Mountain">
+            </div>
+            <div class="content">
+                <h2>Shehzaad K</h2>
+                <div class="icon-container">
+                    <div class="location">
+                        <img id="contenticon" src="..//images/icons/iconlocation.png" alt="Location Icon">
+                        <h4>HY, Ebene</h4>
+                    </div>
+                    <div class="date">
+                        <img id="dateicon" src="..//images/icons/icondate.png" alt="Date Icon">
+                        <h5>February 7, 2024</h4>
+                    </div>
+                </div>
+                <p>We’ve got a killer event lined up with Shehzaad K that you absolutely can’t miss! It’s going to be an
+                    incredible night with amazing music and vibes. Come hang out, dance, and enjoy the tunes.</p>
+                <a href="#">Read →</a>
+            </div>
+        </div>
+
+        <div class="containerevent">
+            <div class="imageevent">
+                <img src="..//images/photos/armada666.jpg" alt="Misty Mountain">
+            </div>
+            <div class="content">
+                <h2>Armada 666</h2>
+                <div class="icon-container">
+                    <div class="location">
+                        <img id="contenticon" src="..//images/icons/iconlocation.png" alt="Location Icon">
+                        <h4>Alkatraz, Grand Baie</h4>
+                    </div>
+                    <div class="date">
+                        <img id="dateicon" src="..//images/icons/icondate.png" alt="Date Icon">
+                        <h5>February 8, 2025</h4>
+                    </div>
+                </div>
+                <p>Gather your friends, grab those tickets, and come ready for a night full of music, fun, and good
+                    times. It’s going to be an unforgettable experience, and we can’t wait to see you there!</p>
+                <a href="#">Read →</a>
+            </div>
+        </div>
+
+        <div class="containerevent">
+            <div class="imageevent">
+                <img src="..//images/photos/avis.jpg" alt="Misty Mountain">
+            </div>
+            <div class="content">
+                <h2>Avi S</h2>
+                <div class="icon-container">
+                    <div class="location">
+                        <img id="contenticon" src="..//images/icons/iconlocation.png" alt="Location Icon">
+                        <h4>POWA Auditorium, Reduit</h4>
+                    </div>
+                    <div class="date">
+                        <img id="dateicon" src="..//images/icons/icondate.png" alt="Date Icon">
+                        <h5>February 28, 2025</h4>
+                    </div>
+                </div>
+                <p>From sick beats to electric vibes, this is the event you don’t want to miss!</p>
+                <a href="#">Read →</a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="..//images/icons/mauritiusflag.png" alt="Mauritius Flag">
+            </div>
+            <div class="footer-center">
+                <div class="textallrights">
+                    <p>&copy; 2024 Zilwa Ltd & Co. All rights reserved.</p><br>
+                </div>
+                <p>
+                    <a href="contactus.html">Contact Us</a> |
+                    <a href="privacy_policy.html">Privacy Policy</a> |
+                    <a href="terms_of_service.html">Terms of Service</a>
+                </p> <br>
+                <div class="social-media">
+                    <span class="Followus">Follow us |</span>
+                    <a href="#"><img src="..//images/icons/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="..//images/icons/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="..//images/icons/tiktok.png" alt="TikTok"></a>
+                    <a href="#"><img src="..//images/icons/youtube.png" alt="YouTube"></a>
+                    <a href="#"><img src="..//images/icons/x.png" alt="X"></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <span>Subscribe to our newsletter</span>
+                <form>
+                    <input type="email" placeholder="Email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <!-- Link scripts -->
+    <script src="..//js/navbar.js"></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nightlife</title>
+    <link rel="stylesheet" href="..//css/nightlife.css">
+    <link rel="stylesheet" href="..//css/navbarfooter.css">
+
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <a href="homepage.html">
+            <div class="logo">
+                <img src="../images/logo/mauritiuslogo.png" alt="Mauritius Logo">
+            </div>
+        </a>
+        <ul class="nav-links">
+            <li class="dropdown">
+                <button>Discover</button>
+                <div class="dropdown-content">
+                    <a href="history.html">History</a>
+                    <a href="culture.html">Culture</a>
+                    <a href="food.html">Food</a>
+                    <a href="language.html">Language</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button>Experience</button>
+                <div class="dropdown-content">
+                    <a href="activities.html">Activities</a>
+                    <a href="islandsandbeaches.html">Islands and Beaches</a>
+                    <a href="nightlife.html">Nightlife</a>
+                    <a href="events.html">Events</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button>Plan your visit</button>
+                <div class="dropdown-content">
+                    <a href="travelinfo.html">Travel information</a>
+                    <a href="travelling.html">Airline</a>
+                    <a href="stay.html">Stay</a>
+                    <a href="gettingaround.html">Getting around</a>
+                    <a href="faq.html">FAQs</a>
+                </div>
+            </li>
+        </ul>
+        <div class="user-options">
+            <!-- User Icon -->
+            <div class="user-icon">
+                <img src="../images/icons/accountuser.png" alt="User Icon">
+            </div>
+            <div class="dropdown1">
+                <button id="signUpBtn">Sign Up</button>
+                <div class="dropdown-content1">
+                    <a href="register.html">Register</a>
+                    <a href="signin.html">Sign In</a>
+                </div>
+            </div>
+
+
+
+            <!-- Mauritius Outline -->
+            <div class="mauritius-outline">
+                <img style="cursor: pointer;" src="../images/logo/mauritiusoutline.png" id="mauritiusoutline"
+                    alt="Mauritius Outline">
+            </div>
+            <!-- Modal Structure -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="..//images/photos/mapofmauritius.jpg" alt="mauritius">
+                </div>
+            </div>
+    </nav>
+
+    <!-- Register Modal Structure -->
+    <div id="registerModal" class="modal-register">
+        <div class="modal-content-register">
+            <span class="close-register">&times;</span>
+            <h2>Register</h2>
+            <!-- Register form content here -->
+            <form>
+                <div class="form-group">
+                    <input type="text" id="fullName" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sign In Modal Structure -->
+    <div id="signinModal" class="modal-signin">
+        <div class="modal-content-signin">
+            <span class="close-signin">&times;</span>
+            <h2>Sign In</h2>
+            <!-- Sign in form content here -->
+            <form>
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- background image -->
+    <div class="background-container">
+        <img id="backgroundimg" src="..//images/photos/nightlifebackground.jpeg" alt="backgroundimg">
+        <h3 class="backgroundtext">Nightlife</h3>
+    </div>
+
+    <div class="content-box">
+        <!-- Descriptive text -->
+        <div class="descriptivetext">
+            <p>
+                Ready to dance the night away and explore the coolest clubs? Whether you’re a night owl or just looking
+                for a fun late-night adventure, you’re in the right place! From pulsing dance floors to chic lounges,
+                we’ve
+                got all the spots where the beats never stop and the vibes are always on point. </p>
+            <br>
+
+            <p>Dive into our guide for the best late-night outs in town, where every night promises new memories and
+                endless fun. Explore top clubs, discover hidden gems, and find the perfect place to let loose with
+                friends.
+                Get ready to experience the magic of dancing till dawn and enjoying every second of the night!</p>
+            <br>
+
+            <p>Let the nightlife begin! ✨ </p>
+        </div>
+
+        <!-- Container for variable sized cards -->
+        <div class="container">
+            <div class="content">
+                <div class="card large">
+                    <img src="..//images/photos/djgerald.jpg_large" alt="DJ Gerald">
+                    <p>Spinning tunes and living the dream! 🎧✨</p>
+                    <p>#MusicMagic #GoodTimes</p>
+                    <p>#ShotzFlicEnFlac</p>
+                </div>
+                <div class="card medium">
+                    <img src="..//images/photos/shangrani2.jpeg" alt="Shandrani Hotel">
+                    <p>And who wouldn&#39;t want a romantic dinner by the sea?</p>
+                    <p>#RomanticGetaway #CoupleGoals</p>
+                    <p>#ShandraniHotel</p>
+                </div>
+                <div class="card medium">
+                    <img src="..//images/photos/nightlifefootball.jpg" alt="Football HY">
+                    <p>Cheering for our team with the best crew! 🏆📺 </p>
+                    <p>#GameDay #SquadGoals</p>
+                    <p>#HYEbene</p>
+                </div>
+
+                <div class="card extra-large">
+                    <img src="..//images/photos/nightlifebackground2.jpg" alt="Beer">
+                    <p>Raising our glasses to unforgettable moments and endless laughter. 🍻✨</p>
+                    <p>#ToastToLife #HappyHour</p>
+                    <p>#EuphoriaNightClubGrandBaie</p>
+                </div>
+
+                <div class="card tall">
+                    <img src="..//images/photos/awanams2.jpg" alt="Awanams Tamarin">
+                    <p>Kisses from the dance floor! 😘💃</p>
+                    <p>#ClubVibes #GoodTimes</p>
+                    <p>#AwanamsTamarin</p>
+                </div>
+
+                <div class="card medium">
+                    <img src="..//images/photos/bigwillys5.jpg" alt="Safari Grand Baie">
+                    <p>Squad goals and epic nights! 🎉📸</p>
+                    <p>#SquadGoals #UnforgettableNights</p>
+                    <p>#SafariBarGrandBaie</p>
+                </div>
+                <div class="card medium">
+                    <img src="..//images/photos/bigwillys.jpg" alt="Enjoy Belle Mare">
+                    <p>Living our best lives and making memories! Slayyyyyyy 😜💃</p>
+                    <p>#GirlsNightOut</p>
+                    <p>#EnjoyBelleMare</p>
+                </div>
+                <div class="card wide">
+                    <img src="..//images/photos/bigwillys4.jpg" alt="Stranger dancing">
+                    <p>Sometimes the best connections start with a dance. 💃🕺 <br>Just two strangers grooving and
+                        making memories on the dance floor. ✨</p>
+                    <p>#DanceLikeNobodyIsWatching</p>
+                    <p>#BigWilly&#39;s</p>
+                </div>
+                <div class="card medium">
+                    <img src="..//images/photos/bigwillys9.jpg" alt="The Irish Trianon Jam Session">
+                    <p>Jamming out and vibing with the rhythm of the moment. 🎶🥁🎸</p>
+                    <p>#JamSession </p>
+                    <p>#TheIrishTrianon</p>
+                </div>
+                <div class="card medium">
+                    <img src="..//images/photos/bigwillys7.jpg" alt="The Irish Trianon Trance">
+                    <p>Lost in the rhythm, feeling every beat 🎶🔥</p>
+                    <p>#VibeCheck #MusicLover #DJLife #GoodVibesOnly"</p>
+                    <p>#TheIrishTrianon</p>
+                </div>
+                <div class="card medium">
+                    <img src="..//images/photos/bigwillys8.jpg" alt="The Irish Trianon audience">
+                    <p>When the beat drops, we all rise.</p>
+                    <p>#GrooveOn</p>
+                    <p>#TheIrishTrianon</p>
+                </div>
+                <div class="card medium">
+                    <img src="..//images/photos/bigwillys6.jpg" alt="Selfie">
+                    <p>Selfie squad on point! 📸👍</p>
+                    <p>#MemoriesInTheMaking</p>
+                    <p>#BigWilly&#39;s</p>
+                </div>
+                <div class="card wide">
+                    <img src="..//images/photos/firetribe.jpeg" alt="Fire Tribe">
+                    <p>Channeling the inner fire dancer 🔥🔥</p>
+                    <p>#IgniteTheNight </p>
+                    <p>#BelleMarePlage</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="..//images/icons/mauritiusflag.png" alt="Mauritius Flag">
+            </div>
+            <div class="footer-center">
+                <div class="textallrights">
+                    <p>&copy; 2024 Zilwa Ltd & Co. All rights reserved.</p><br>
+                </div>
+                <p>
+                    <a href="contactus.html">Contact Us</a> |
+                    <a href="privacy_policy.html">Privacy Policy</a> |
+                    <a href="terms_of_service.html">Terms of Service</a>
+                </p> <br>
+                <div class="social-media">
+                    <span class="Followus">Follow us |</span>
+                    <a href="#"><img src="..//images/icons/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="..//images/icons/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="..//images/icons/tiktok.png" alt="TikTok"></a>
+                    <a href="#"><img src="..//images/icons/youtube.png" alt="YouTube"></a>
+                    <a href="#"><img src="..//images/icons/x.png" alt="X"></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <span>Subscribe to our newsletter</span>
+                <form>
+                    <input type="email" placeholder="Email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link scripts -->
+    <script src="../js/navbar.js"></script>
+
+</body>
+
+
+</html>

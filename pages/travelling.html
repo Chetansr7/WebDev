@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="..//css/travelling.css">
+    <link rel="stylesheet" href="..//css/navbarfooter.css">
+</head>
+
+<body>
+    <img class="myimg" src="..//images/photos/plane.jpg">
+
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <a href="homepage.html">
+            <div class="logo">
+                <img src="../images/logo/mauritiuslogo.png" alt="Mauritius Logo">
+            </div>
+        </a>
+        <ul class="nav-links">
+            <li class="dropdown">
+                <button>Discover</button>
+                <div class="dropdown-content">
+                    <a href="history.html">History</a>
+                    <a href="culture.html">Culture</a>
+                    <a href="food.html">Food</a>
+                    <a href="language.html">Language</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button>Experience</button>
+                <div class="dropdown-content">
+                    <a href="activities.html">Activities</a>
+                    <a href="islandsandbeaches.html">Islands and Beaches</a>
+                    <a href="nightlife.html">Nightlife</a>
+                    <a href="events.html">Events</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button>Plan your visit</button>
+                <div class="dropdown-content">
+                    <a href="travelinfo.html">Travel information</a>
+                    <a href="travelling.html">Airline</a>
+                    <a href="stay.html">Stay</a>
+                    <a href="gettingaround.html">Getting around</a>
+                    <a href="faq.html">FAQs</a>
+                </div>
+            </li>
+        </ul>
+        <div class="user-options">
+            <!-- User Icon -->
+            <div class="user-icon">
+                <img src="../images/icons/accountuser.png" alt="User Icon">
+            </div>
+            <div class="dropdown1">
+                <button id="signUpBtn">Sign Up</button>
+                <div class="dropdown-content1">
+                    <a href="register.html">Register</a>
+                    <a href="signin.html">Sign In</a>
+                </div>
+            </div>
+
+
+
+            <!-- Mauritius Outline -->
+            <div class="mauritius-outline">
+                <img style="cursor: pointer;" src="../images/logo/mauritiusoutline.png" id="mauritiusoutline"
+                    alt="Mauritius Outline">
+            </div>
+            <!-- Modal Structure -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="..//images/photos/mapofmauritius.jpg" alt="mauritius">
+                </div>
+            </div>
+    </nav>
+
+    <!-- Register Modal Structure -->
+    <div id="registerModal" class="modal-register">
+        <div class="modal-content-register">
+            <span class="close-register">&times;</span>
+            <h2>Register</h2>
+            <!-- Register form content here -->
+            <form>
+                <div class="form-group">
+                    <input type="text" id="fullName" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sign In Modal Structure -->
+    <div id="signinModal" class="modal-signin">
+        <div class="modal-content-signin">
+            <span class="close-signin">&times;</span>
+            <h2>Sign In</h2>
+            <!-- Sign in form content here -->
+            <form>
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="text">
+        <h3>Travelling to Mauritius</h3>
+    </div>
+
+    <div class="content-box">
+        <h1>How to get to Mauritius?</h1>
+        <p>Mauritius is an island in the Indian Ocean, so you will need to catch a flight to Sir Seewoosagur Ramgoolam
+            International Airport in Mauritius or arrive by cruise ship, which will dock in our capital city of Port
+            Louis. Mauritius is really well connected, with direct flights from Europe, South Africa, the UAE, Malaysia,
+            India and Australia. You can also find out more about our national airline, Air Mauritius.</p>
+        <h1>A quick guide to direct flights to Mauritius</h1>
+        <p>Looking for direct flights to Mauritius? Our beautiful island is easy to reach from destinations worldwide,
+            with all international flights arriving at Sir Seewoosagur Ramgoolam International Airport (Mauritius
+            Airport). Find out about the most popular direct routes right here…</p>
+
+        <img src="..//images/photos/plane2.jpg" width="70%" height="50%">
+
+        <div class="air1">
+            <h3>Direct flights to Mauritius from France</h3>
+            <p><b>Paris Charles de Gaulle</b>
+                <br>Approximate flight time: 12-hours
+                <br>Fly direct with Air Mauritius or Air France
+                <br><b>Paris-Orly</b>
+                <br>Approximate flight time: 12-hours
+                <br>Fly direct with Corsair International
+            </p>
+        </div>
+
+        <div class="air2">
+            <h3>Direct flights to Mauritius from the UK</h3>
+            <p><b>London Gatwick</b>
+                <br>Approximate flight time: 12-hours
+                <br>Fly direct with Air Mauritius or British Airways
+
+                <br><b>Please note:</b> Air Mauritius flights will move from London Heathrow to London Gatwick from 29
+                October 2023.
+            </p>
+        </div>
+
+        <div class="air3">
+            <h3>Direct flights to Mauritius from Germany</h3>
+            <p><b>Frankfurt</b>
+                <br>Approximate flight time: 11 hours and 30-minutes
+                <br>Fly direct with Condor or Discover Airlines
+            </p>
+        </div>
+
+        <div class="air4">
+            <h3>Direct flights to Mauritius from India</h3>
+            <p><b>Mumbai</b>
+                <br>Approximate flight time: 6 hours
+                <br>Fly direct with Air Mauritius
+            </p>
+        </div>
+
+        <div class="air5">
+            <h3>Direct flights to Mauritius from Turkey</h3>
+            <p><b>Istanbul</b>
+                <br>Approximate flight time: 9 hours 45 minutes
+                <br>Fly direct with Turkish Airlines
+            </p>
+        </div>
+
+        <div class="air6">
+            <h3>Direct flights to Mauritius from Saudi Arabia</h3>
+            <p><b>Jeddah</b>
+                <br>Approximate flight time: 7 hours 10 minutes
+                <br> Fly direct with Saudia Airlines
+            </p>
+        </div>
+
+        <div class="air7">
+            <h3>Direct flights to Mauritius from Australia</h3>
+            <p><b>Perth</b>
+                <br>Approximate flight time: 8 hours 40 minutes
+                <br>Fly direct with Air Mauritius
+            </p>
+        </div>
+
+        <div class="air7">
+            <h3>Direct flights to Mauritius from Malaysia</h3>
+            <p><b>Kuala Lumpur</b>
+                <br>Approximate flight time: 8 hours 40 minutes
+                <br>Fly direct with Air Mauritius
+            </p>
+        </div>
+
+        <p>-For more information please refer to our <a href="https://www.airmauritius.com">Air Mauritius</a> website-
+        </p>
+
+
+
+        <h1>-Cruise to Mauritius-</h1>
+        <p>You can visit Mauritius during a cruise onboard big-named liners, including Cunard’s iconic Queen Mary and
+            Queen Elizabeth ships. Mauritius cruises are gaining in popularity and Port Louis harbour in the northwest
+            of the island welcomes luxury expedition cruise liners sailing from countries including Italy, France,
+            Monaco, the UK, Germany and South Africa. Cruise itineraries usually sail the Vanilla Islands circuit, which
+            includes Mauritius, Seychelles, Reunion Island and Madagascar.</p>
+
+        <h3>New cruise terminal in Mauritius</h3>
+        <p>To offer a quality service to guests and ships berthing in Mauritius, a new cruise terminal has been built in
+            Port Louis and is operational since December 2023. The new Mauritius Port terminal is one of the
+            best in the Indian Ocean, with the capacity to accommodate 4000 passengers each day.</p>
+        <img src="..//images/photos/port.jpg" width="70%" height="50%">
+
+        <h2>-Cruise lines sailing to Mauritius-</h2>
+        <div class="cruise">
+            <p>Aida
+                <br>Costa
+                <br>Crystal cruises
+                <br>Cunard
+                <br>Fred Olsen cruises
+                <br>MSC Cruises
+                <br>Norwegian cruises
+                <br>Ponant
+                <br>Seabourn cruises
+                <br>Silversea
+            </p>
+        </div>
+
+
+        <h3>Mauritius Tour Packages</h3>
+
+        <p>Explore some of our curated packages designed to immerse you in the vibrant culture and stunning landscapes
+            of Mauritius. Each package is crafted with care to ensure an unforgettable experience, whether you’re
+            seeking relaxation on pristine beaches, thrilling adventures in nature, or cultural discoveries in charming
+            local villages. Take the next step towards your dream vacation with us.
+
+        </p>
+
+        <table>
+            <tr>
+                <th>Packages</th>
+                <th>Price</th>
+                <th>Days</th>
+                <th>Inclusion</th>
+
+            </tr>
+            <tr>
+                <td>Lux* Belle Mare</td>
+                <td>RM 2,904*</td>
+                <td>3 Nights / 5 Days</td>
+                <td>Hotel, Meals, Transport</td>
+
+            </tr>
+            <tr>
+                <td>Tamassa Bel Ombre</td>
+                <td>RM 2,314*</td>
+                <td>4 Nights</td>
+                <td>Hotel only</td>
+
+            </tr>
+            <tr>
+                <td>Trou Aux Biches</td>
+                <td>RM 567*</td>
+                <td>-</td>
+                <td>Submarine Tour</td>
+
+            </tr>
+            <tr>
+                <td>Le Meridien Mauritius</td>
+                <td>RM 7,358*</td>
+                <td>-</td>
+                <td>Hotels, Meals, Car</td>
+
+            </tr>
+            <tr>
+                <td>Belle Mare</td>
+                <td>RM 290*</td>
+                <td>-</td>
+                <td>Undersea Walk, Parasailing, Tube Ride</td>
+
+            </tr>
+        </table>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="..//images/icons/mauritiusflag.png" alt="Mauritius Flag">
+            </div>
+            <div class="footer-center">
+                <div class="textallrights">
+                    <p>&copy; 2024 Zilwa Ltd & Co. All rights reserved.</p><br>
+                </div>
+                <p>
+                    <a href="contactus.html">Contact Us</a> |
+                    <a href="privacy_policy.html">Privacy Policy</a> |
+                    <a href="terms_of_service.html">Terms of Service</a>
+                </p> <br>
+                <div class="social-media">
+                    <span class="Followus">Follow us |</span>
+                    <a href="#"><img src="..//images/icons/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="..//images/icons/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="..//images/icons/tiktok.png" alt="TikTok"></a>
+                    <a href="#"><img src="..//images/icons/youtube.png" alt="YouTube"></a>
+                    <a href="#"><img src="..//images/icons/x.png" alt="X"></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <span>Subscribe to our newsletter</span>
+                <form>
+                    <input type="email" placeholder="Email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link scripts -->
+    <script src="../js/navbar.js"></script>
+
+</body>
+
+
+</html>

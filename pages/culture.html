@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culture</title>
+    <link rel="stylesheet" href="..//css/navbarfooter.css">
+    <link rel="stylesheet" href="..//css/MainPage.css">
+    <link rel="stylesheet" href="..//css/culture.css">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <a href="homepage.html">
+            <div class="logo">
+                <img src="../images/logo/mauritiuslogo.png" alt="Mauritius Logo">
+            </div>
+        </a>
+        <ul class="nav-links">
+            <li class="dropdown">
+                <button>Discover</button>
+                <div class="dropdown-content">
+                    <a href="history.html">History</a>
+                    <a href="culture.html">Culture</a>
+                    <a href="food.html">Food</a>
+                    <a href="language.html">Language</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button>Experience</button>
+                <div class="dropdown-content">
+                    <a href="activities.html">Activities</a>
+                    <a href="islandsandbeaches.html">Islands and Beaches</a>
+                    <a href="nightlife.html">Nightlife</a>
+                    <a href="events.html">Events</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button>Plan your visit</button>
+                <div class="dropdown-content">
+                    <a href="travelinfo.html">Travel information</a>
+                    <a href="travelling.html">Airline</a>
+                    <a href="stay.html">Stay</a>
+                    <a href="gettingaround.html">Getting around</a>
+                    <a href="faq.html">FAQs</a>
+                </div>
+            </li>
+        </ul>
+        <div class="user-options">
+            <!-- User Icon -->
+            <div class="user-icon">
+                <img src="../images/icons/accountuser.png" alt="User Icon">
+            </div>
+            <div class="dropdown1">
+                <button id="signUpBtn">Sign Up</button>
+                <div class="dropdown-content1">
+                    <a href="register.html">Register</a>
+                    <a href="signin.html">Sign In</a>
+                </div>
+            </div>
+
+
+
+            <!-- Mauritius Outline -->
+            <div class="mauritius-outline">
+                <img style="cursor: pointer;" src="../images/logo/mauritiusoutline.png" id="mauritiusoutline"
+                    alt="Mauritius Outline">
+            </div>
+            <!-- Modal Structure -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="..//images/photos/mapofmauritius.jpg" alt="mauritius">
+                </div>
+            </div>
+    </nav>
+
+    <!-- Register Modal Structure -->
+    <div id="registerModal" class="modal-register">
+        <div class="modal-content-register">
+            <span class="close-register">&times;</span>
+            <h2>Register</h2>
+            <!-- Register form content here -->
+            <form>
+                <div class="form-group">
+                    <input type="text" id="fullName" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sign In Modal Structure -->
+    <div id="signinModal" class="modal-signin">
+        <div class="modal-content-signin">
+            <span class="close-signin">&times;</span>
+            <h2>Sign In</h2>
+            <!-- Sign in form content here -->
+            <form>
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="fullscreen-image">
+        <div class="backgroundtext">Culture</div>
+        <div class="overlay-content">
+            <h1>Mauritian culture is a vibrant tapestry woven from African, Indian, Chinese, and European threads.</h1>
+            <button id="learn-more-button">Learn More</button>
+        </div>
+    </div>
+    <main id="main-content">
+        <section class="history-content">
+            <h1>Culture in Mauritius</h1>
+            <p>Mauritius is a melting pot of cultures, shaped by centuries of immigration and colonial history. The
+                island’s population is a vibrant mosaic of Indian, African, Chinese, and European influences, each
+                contributing to its rich cultural tapestry. This diversity is celebrated through colourful festivals,
+                varied religious practices, and a wide array of culinary traditions. From the rhythmic beats of Sega
+                music to the intricate rituals of Muslim, Hindu, Tamil, Marathi, Telegu, Chinese and Christian
+                ceremonies, the cultural landscape of Mauritius is a testament to its harmonious coexistence and shared
+                heritage.</p>
+        </section>
+
+        <section class="centered-box">
+            <div class="box-content">
+                <img src="..//images/photos/sega-feu-de-camp-2.jpg" alt="Description of image" class="centered-image">
+                <div class="centered-text">
+                    <h2>Mauritian Sega</h2>
+                    <p>Mauritian Sega is the island’s national dance, renowned for its lively rhythms and expressive
+                        movements. Originating from African roots, Sega blends traditional drum beats with energetic
+                        dance steps, reflecting the vibrant cultural heritage of Mauritius. Performed during festivals
+                        and celebrations, Sega features dancers swaying to the beats of the ravanne drum, with intricate
+                        footwork and spirited interactions that capture the essence of Mauritian joy and community
+                        spirit.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="back">
+            <h2 style="text-align: center;">Mauritius Holidays and Festivals</h2>
+            <section class="centered-box">
+                <div class="box-content">
+                    <div class="centered-text">
+                        <h2>Chinese New Year</h2>
+                        <p>The Chinese Festival in Chinatown, Mauritius, is a lively celebration of Chinese culture,
+                            featuring lion and dragon dances, traditional performances, and delicious street food. The
+                            event highlights the vibrant heritage of the Chinese community, with colourful decorations
+                            and festive activities that attract both locals and visitors.</p>
+                    </div>
+                    <img src="..//images/photos/Culture-20.jpeg" alt="Description of image" class="centered-image">
+                </div>
+            </section>
+
+            <section class="centered-box">
+                <div class="box-content">
+                    <img src="..//images/photos/Culture-21.jpg" alt="Description of image" class="centered-image">
+                    <div class="centered-text">
+                        <h2>Eid-ul-Fitr</h2>
+                        <p>Eid-ul-Fitr is a joyous celebration in Mauritius marking the end of Ramadhan. The festival
+                            begins with a special prayer service, followed by festive meals, exchanging of gifts, and
+                            community gatherings. Traditional dishes, such as biryani and sweet treats, are enjoyed, and
+                            the occasion is marked by acts of charity and togetherness. Eid-ul-Fitr highlights the
+                            island&#39;s rich Islamic heritage and the spirit of unity among its diverse communities.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="centered-box">
+                <div class="box-content">
+                    <div class="centered-text">
+                        <h2>Eid-ul-Adha</h2>
+                        <p>Eid-ul-Adha, also known as the Festival of Sacrifice, is a significant celebration in
+                            Mauritius observed by the Muslim community. It commemorates the willingness of Ibrahim
+                            (Abraham) to sacrifice his son in obedience to God. The festival involves special prayers,
+                            the sacrifice of livestock, and distribution of meat to family, friends, and those in need.
+                            Festive meals and community gatherings highlight the spirit of generosity, faith, and unity
+                            that defines this important religious occasion.</p>
+                    </div>
+                    <img src="..//images/photos/Culture-22.jpg" alt="Description of image" class="centered-image">
+                </div>
+            </section>
+
+            <section class="centered-box">
+                <div class="box-content">
+                    <img src="..//images/photos/Culture-23.jpeg" alt="Description of image" class="centered-image">
+                    <div class="centered-text">
+                        <h2>Maha Shivaratree</h2>
+                        <p>Maha Shivaratri is one of the most significant Hindu festivals celebrated in Mauritius.
+                            Dedicated to Lord Shiva, the festival involves night-long prayers, fasting, and rituals at
+                            temples and sacred sites, including the revered Grand Bassin (Ganga Talao). Devotees gather
+                            to honour Lord Shiva, seeking blessings and spiritual renewal. The festival is marked by
+                            vibrant processions, devotional songs, and a deep sense of community and devotion,
+                            reflecting the rich Hindu heritage of Mauritius.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="centered-box">
+                <div class="box-content">
+                    <div class="centered-text">
+                        <h2>Holi</h2>
+                        <p>The Festival of Colours, is joyfully celebrated in Mauritius with vibrant and exuberant
+                            festivities. Participants throw coloured powders, dance, and enjoy festive music, reflecting
+                            the spirit of unity and renewal. This lively celebration, marking the arrival of spring and
+                            the victory of good over evil, brings together people from diverse backgrounds to partake in
+                            the colourful and spirited traditions of Holi.</p>
+                    </div>
+                    <img src="..//images/photos/Culture-24.jpg" alt="Description of image" class="centered-image">
+                </div>
+            </section>
+
+            <section class="centered-box">
+                <div class="box-content">
+                    <img src="..//images/photos/Culture-25.webp" alt="Description of image" class="centered-image">
+                    <div class="centered-text">
+                        <h2>Thaipoosam Cavadee</h2>
+                        <p>Thaipoosam Cavadee is a significant Hindu festival in Mauritius, dedicated to Lord Murugan.
+                            Celebrated with great devotion, it involves elaborate processions, where devotees carry
+                            decorated kavadi (burden) as acts of penance and devotion. The festival is marked by vibrant
+                            music, chanting, and rituals, reflecting the deep spiritual and cultural significance of the
+                            event in the island&#39;s Tamil community.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="centered-box">
+                <div class="box-content">
+                    <div class="centered-text">
+                        <h2>Ganesh Chaturthi</h2>
+                        <p>Ganesh Chaturthi is a vibrant Hindu festival celebrated in Mauritius in honour of Lord
+                            Ganesha. Devotees create intricate clay idols of Ganesha, which are worshipped with devotion
+                            before being immersed in water at the festival&#39;s conclusion. The celebration includes
+                            lively
+                            processions, devotional music, and communal gatherings, showcasing the rich cultural and
+                            religious traditions of the island’s Indian community.</p>
+                    </div>
+                    <img src="..//images/photos/Culture-26.webp" alt="Description of image" class="centered-image">
+                </div>
+            </section>
+
+            <section class="centered-box">
+                <div class="box-content">
+                    <img src="..//images/photos/Cuture-27.avif" alt="Description of image" class="centered-image">
+                    <div class="centered-text">
+                        <h2>Diwali</h2>
+                        <p>The Festival of Lights, is joyfully celebrated in Mauritius with vibrant festivities. The
+                            festival symbolises the triumph of light over darkness and good over evil. Homes are adorned
+                            with colourful lights and rangoli designs, while families gather to enjoy festive meals,
+                            sweets, and fireworks. Diwali highlights the rich cultural traditions of the island’s Hindu
+                            community and fosters a spirit of joy, unity, and celebration.</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="centered-box">
+                <div class="box-content">
+                    <div class="centered-text">
+                        <h2>Père Laval</h2>
+                        <p>Père Jacques-Désiré Laval, was a pioneering Catholic missionary in Mauritius who arrived in
+                            1841. Known for his deep compassion and dedication, he played a crucial role in the
+                            spiritual and social upliftment of the island&#39;s population. Revered as a saintly figure,
+                            Father Laval&#39;s legacy is honoured at his shrine in Sainte-Croix, where thousands gather
+                            annually to pay homage and seek blessings. His contributions to the Catholic community and
+                            his efforts in education and healthcare remain celebrated aspects of Mauritius&#39;s
+                            religious
+                            heritage.</p>
+                    </div>
+                    <img src="..//images/photos/Culture-28.jpg" alt="Description of image" class="centered-image">
+                </div>
+            </section>
+
+            <section class="centered-box">
+                <div class="box-content">
+                    <img src="..//images/photos/Culture-29.jpg" alt="Description of image" class="centered-image">
+                    <div class="centered-text">
+                        <h2>Easter</h2>
+                        <p>Easter in Mauritius is a joyful celebration marked by church services, festive meals, and
+                            community gatherings. The holiday commemorates the resurrection of Jesus Christ and is
+                            observed with traditional activities such as attending mass, sharing special dishes, and
+                            enjoying time with family. Colourful Easter eggs and local delicacies add to the festive
+                            atmosphere, reflecting the vibrant Christian heritage of the island.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="centered-box">
+                <div class="box-content">
+                    <div class="centered-text">
+                        <h2>Christmas</h2>
+                        <p>Christmas in Mauritius is a festive time marked by vibrant celebrations and cultural
+                            traditions. The island’s diverse community comes together to enjoy festive meals, attend
+                            church services, and participate in lively events. Decorations, carol singing, and
+                            traditional Mauritian dishes add to the holiday spirit, reflecting both local and global
+                            influences. The warmth and joy of Christmas highlight the island’s rich cultural tapestry
+                            and community spirit.</p>
+                    </div>
+                    <img src="..//images/photos/Culture-30.jpg" alt="Description of image" class="centered-image">
+                </div>
+            </section>
+
+
+        </section>
+
+        <section class="picture-text-section">
+            <figure>
+                <h3 style="text-align: center;">Religious places to visit:</h3>
+            </figure>
+        </section>
+
+        <section class="picture-text-section">
+            <figure>
+                <h2>1. Jummah Masjid also known as Jummah Mosque</h2>
+                <img src="..//images/photos/Culture-1.jpg" alt="Description of image 1">
+                <figcaption><br>Jummah Masjid, located in Port Louis, is one of the most significant and historic
+                    mosques in Mauritius. Built in the 1850s, it stands as a symbol of the island&#39;s Islamic heritage
+                    and
+                    cultural diversity. The mosque&#39;s stunning architecture, featuring intricate woodwork and
+                    beautiful
+                    marble flooring, reflects a blend of Indian, Creole, and Islamic influences. Jummah Masjid is not
+                    only a place of worship but also a centre for community gatherings and cultural events, embodying
+                    the spirit of unity and faith among Mauritian Muslims.</figcaption>
+            </figure>
+        </section>
+
+        <section class="picture-text-section">
+            <figure>
+                <h2>2. Al-Aqsa Masjid</h2>
+                <img src="..//images/photos/Culture-17.jpg" alt="Description of image 1">
+                <figcaption><br>Al Aqsa Masjid, located in Plaine-Verte, the heart of Port-Louis, is the oldest mosque
+                    in Mauritius and a significant landmark for the island&#39;s Muslim community. Established in the
+                    early
+                    1800s, this historic mosque is renowned for its elegant architecture and tranquil atmosphere. It
+                    serves as a central place of worship and community gathering, hosting religious education and
+                    cultural events.</figcaption>
+            </figure>
+        </section>
+
+        <section class="picture-text-section">
+            <figure>
+                <h2>3. Grand Bassin also known as Ganga Talao</h2>
+                <img src="..//images/photos/Culture-3.jpg" alt="Description of image 2">
+                <figcaption><br>Grand Bassin, located in the south-central part of Mauritius, is a sacred Hindu
+                    pilgrimage site located in the mountainous region of Mauritius. This serene crater lake is
+                    considered one of the holiest sites outside of India, dedicated to Lord Shiva. Every year, thousands
+                    of devotees participate in the Maha Shivaratri festival, making the pilgrimage to the lake to offer
+                    prayers and perform rituals. The site is adorned with temples and statues, including the impressive
+                    33-meter tall statue of Lord Shiva, creating a spiritual atmosphere that reflects the deep religious
+                    devotion and cultural heritage of the Mauritian Hindu community.</figcaption>
+            </figure>
+        </section>
+
+        <section class="picture-text-section">
+            <figure>
+                <h2>4. Kailassam Temple</h2>
+                <img src="..//images/photos/Culture-11.png" alt="Description of image 3">
+                <figcaption><br>Kailassam Temple, situated in Port Louis, Mauritius, is a revered Hindu temple dedicated
+                    to Lord Shiva. Established in the 19th century, this temple is an architectural marvel, showcasing
+                    intricate carvings and vibrant sculptures that reflect the rich cultural heritage of the
+                    island&#39;s
+                    Tamil community. As one of the oldest Hindu temples in Mauritius, Kailassam Temple serves as a
+                    spiritual sanctuary for devotees, hosting numerous religious ceremonies and festivals, including
+                    Maha Shivaratri. The temple is a testament to the enduring faith and cultural diversity of
+                    Mauritius, attracting worshippers and visitors alike.</figcaption>
+            </figure>
+        </section>
+
+        <section class="picture-text-section">
+            <figure>
+                <h2>5. Sri Venkateswara Swamy Divya Mangala Vigraham</h2>
+                <img src="..//images/photos/Culture-13.jpg" alt="Description of image 3">
+                <figcaption><br>Sri Venkateswara Swamy Divya Mangala Vigraham located in 16eme Mille, Plaines Wilhems,
+                    is a remarkable and unique statue of Lord Venkateswara, standing at an impressive height of 108
+                    feet. This magnificent statue is the tallest of its kind in the world, symbolising the deep devotion
+                    of the Hindu community in Mauritius. The statue is a prominent spiritual landmark, attracting
+                    pilgrims and tourists from around the globe. It serves as a testament to the island&#39;s rich
+                    cultural
+                    and religious heritage, offering a place of worship and tranquility amidst its grand and
+                    awe-inspiring presence.</figcaption>
+            </figure>
+        </section>
+
+        <section class="picture-text-section">
+            <figure>
+                <h2>6. Mauritius Telugu Maha Sabha Mandi</h2>
+                <img src="..//images/photos/Culture-14.jpg" alt="Description of image 3">
+                <figcaption><br>Mauritius Telugu Maha Sabha Mandi located in Goodlands is a prominent cultural and
+                    religious organisation dedicated to preserving and promoting Telugu culture and heritage in
+                    Mauritius. Established to serve the Telugu-speaking community, the Mandi hosts a variety of cultural
+                    events, religious ceremonies, and educational programs. It is a vibrant centre for community
+                    gatherings, celebrating traditional festivals and fostering a sense of unity and pride among its
+                    members. The organisation plays a crucial role in maintaining the cultural identity of the Telugu
+                    community, ensuring that their rich traditions and customs are passed down through generations.
+                </figcaption>
+            </figure>
+        </section>
+
+        <section class="picture-text-section">
+            <figure>
+                <h2>7. Thien-Thane Pagoda</h2>
+                <img src="..//images/photos/Culture-6.jpg" alt="Description of image 3">
+                <figcaption><br>Thien-Thane Pagoda, located in Port-Louis, is a serene and beautiful Buddhist temple
+                    that serves as a spiritual sanctuary for the island&#39;s Buddhist community. This pagoda is a place
+                    of
+                    worship, meditation, and reflection, offering a calm environment for devotees and visitors alike.
+                    The architecture and design of Thien-Thane Pagoda are inspired by traditional Asian aesthetics,
+                    featuring intricate details and serene surroundings that reflect the peaceful principles of
+                    Buddhism. It stands as a testament to the cultural and religious diversity of Mauritius, promoting
+                    harmony and understanding among different faiths.</figcaption>
+            </figure>
+        </section>
+
+        <section class="picture-text-section">
+            <figure>
+                <h2>8. Kwan Tee Pagoda</h2>
+                <img src="..//images/photos/Culture-8.jpg" alt="Description of image 3">
+                <figcaption><br>Here’s a brief paragraph about Kwan Tee Pagoda in Mauritius:
+
+                    Kwan Tee Pagoda, located in Port Louis, Mauritius, is the oldest Chinese pagoda on the island,
+                    serving as a significant place of worship and cultural heritage for the Chinese community.
+                    Established in the early 19th century, this historic pagoda is dedicated to Guan Di (Kwan Tee), the
+                    Chinese god of war and righteousness. The pagoda&#39;s architecture reflects traditional Chinese
+                    design,
+                    featuring ornate decorations and vibrant colours. It is a hub for religious ceremonies, cultural
+                    festivals, and community gatherings, playing a vital role in preserving Chinese traditions and
+                    fostering cultural diversity in Mauritius.</figcaption>
+            </figure>
+        </section>
+
+        <section class="picture-text-section">
+            <figure>
+                <h2>9. Pere Laval&#39;s Shrine</h2>
+                <img src="..//images/photos/Culture-15.jpg" alt="Description of image 3">
+                <figcaption><br>Père Laval&#39;s Shrine, located in Sainte-Croix, is a significant Catholic pilgrimage
+                    site
+                    dedicated to the veneration of Père Jacques-Désiré Laval, a revered missionary priest known for his
+                    work in evangelising the island&#39;s early Christian community. The shrine, which attracts
+                    thousands of
+                    visitors annually, features a beautiful chapel and a statue of Père Laval, surrounded by gardens. It
+                    serves as a place of prayer and reflection, honouring the legacy of Père Laval&#39;s dedication and
+                    compassion. The site is a testament to the enduring influence of Catholic faith in Mauritius and a
+                    centre for spiritual gatherings and celebrations.</figcaption>
+            </figure>
+        </section>
+
+        <section class="picture-text-section">
+            <figure>
+                <h2>10. St. Louis Cathedral, Port-Louis</h2>
+                <img src="..//images/photos/Culture-18.jpg" alt="Description of image 3">
+                <figcaption><br> St. Louis Cathedral, located in Port Louis, is one of the oldest and most prominent
+                    churches in Mauritius. Established in the early 19th century, the cathedral stands as a significant
+                    landmark in the island&#39;s religious and architectural heritage. Its neoclassical design, with
+                    elegant
+                    columns and intricate detailing, reflects a blend of historical styles and local influences. St.
+                    Louis Cathedral serves as a central place of worship for the Catholic community, hosting regular
+                    services, special ceremonies, and cultural events. Its historical significance and architectural
+                    beauty make it a key site for both spiritual and cultural engagement in Mauritius.</figcaption>
+            </figure>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="..//images/icons/mauritiusflag.png" alt="Mauritius Flag">
+            </div>
+            <div class="footer-center">
+                <div class="textallrights">
+                    <p>&copy; 2024 Zilwa Ltd & Co. All rights reserved.</p><br>
+                </div>
+                <p>
+                    <a href="contactus.html">Contact Us</a> |
+                    <a href="privacy_policy.html">Privacy Policy</a> |
+                    <a href="terms_of_service.html">Terms of Service</a>
+                </p> <br>
+                <div class="social-media">
+                    <span class="Followus">Follow us |</span>
+                    <a href="#"><img src="..//images/icons/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="..//images/icons/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="..//images/icons/tiktok.png" alt="TikTok"></a>
+                    <a href="#"><img src="..//images/icons/youtube.png" alt="YouTube"></a>
+                    <a href="#"><img src="..//images/icons/x.png" alt="X"></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <span>Subscribe to our newsletter</span>
+                <form>
+                    <input type="email" placeholder="Email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link scripts -->
+    <script src="..//js/culture.js"></script>
+    <script src="..//js/navbar.js"></script>
+</body>
+
+</html>
